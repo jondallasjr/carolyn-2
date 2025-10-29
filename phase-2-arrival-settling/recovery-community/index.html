@@ -1,0 +1,641 @@
+<!DOCTYPE html><html lang='en'><head><meta charset='UTF-8'><meta name='viewport' content='width=device-width, initial-scale=1.0'><title>Connecting with Recovery Community</title><style>/* Global CSS
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: #fafbfc;
+}
+
+a {
+  color: #2c5aa0;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* HEADER STYLES */
+.site-header {
+  background: linear-gradient(135deg, #1a3a5c 0%, #2c5aa0 100%);
+  color: white;
+  padding: 40px 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.site-title {
+  margin: 0 0 8px 0;
+  font-size: 2.2em;
+  font-weight: 700;
+}
+
+.site-tagline {
+  margin: 0;
+  font-size: 1.1em;
+  opacity: 0.95;
+  font-weight: 300;
+}
+
+/* NAVIGATION STYLES */
+.site-nav {
+  background: white;
+  border-bottom: 2px solid #e0e8f0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.nav-link {
+  display: inline-block;
+  padding: 15px 16px;
+  color: #555;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95em;
+  transition: all 0.3s ease;
+  border-bottom: 3px solid transparent;
+}
+
+.nav-link:hover {
+  color: #2c5aa0;
+  border-bottom-color: #2c5aa0;
+}
+
+.nav-link.active {
+  color: #2c5aa0;
+  border-bottom-color: #2c5aa0;
+}
+
+/* FOOTER STYLES */
+.site-footer {
+  background: #1a3a5c;
+  color: #fff;
+  padding: 50px 20px 20px;
+  margin-top: 60px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  margin-bottom: 30px;
+}
+
+.footer-section h4 {
+  margin: 0 0 15px 0;
+  font-size: 1.1em;
+  font-weight: 600;
+}
+
+.footer-section p {
+  margin: 0 0 10px 0;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section li {
+  margin-bottom: 8px;
+}
+
+.footer-section a {
+  color: #a8c5e0;
+  transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: center;
+  opacity: 0.8;
+  font-size: 0.9em;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .site-header {
+    padding: 30px 15px;
+  }
+
+  .site-title {
+    font-size: 1.8em;
+  }
+
+  .site-tagline {
+    font-size: 1em;
+  }
+
+  .nav-container {
+    gap: 0;
+  }
+
+  .nav-link {
+    padding: 12px 12px;
+    font-size: 0.9em;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
+/* Phase 2: Arrival & Initial Settling (3-4 Weeks) - Page CSS */
+.phase-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+.phase-header {
+  border-bottom: 3px solid #2c5aa0;
+  padding-bottom: 20px;
+  margin-bottom: 40px;
+}
+
+.phase-header h1 {
+  font-size: 2.5em;
+  margin: 0 0 10px 0;
+  color: #1a3a5c;
+}
+
+.phase-subtitle {
+  font-size: 1.2em;
+  color: #666;
+  margin: 0;
+  font-weight: 500;
+}
+
+.intro-section {
+  background: #f0f4f8;
+  padding: 20px;
+  border-left: 4px solid #2c5aa0;
+  margin-bottom: 40px;
+  border-radius: 4px;
+}
+
+.intro-text {
+  margin: 0;
+  font-size: 1.1em;
+  color: #444;
+}
+
+.timeline-section {
+  margin-bottom: 40px;
+}
+
+.timeline-section h2 {
+  font-size: 1.8em;
+  color: #1a3a5c;
+  margin-bottom: 20px;
+}
+
+.timeline-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.timeline-item {
+  background: white;
+  border: 2px solid #e0e8f0;
+  border-radius: 8px;
+  padding: 20px;
+  transition: all 0.3s ease;
+}
+
+.timeline-item:hover {
+  border-color: #2c5aa0;
+  box-shadow: 0 4px 12px rgba(44, 90, 160, 0.1);
+}
+
+.timeline-date {
+  display: block;
+  font-size: 0.9em;
+  color: #2c5aa0;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 8px;
+}
+
+.timeline-title {
+  font-size: 1.2em;
+  font-weight: 600;
+  color: #1a3a5c;
+  margin-bottom: 10px;
+}
+
+.timeline-description {
+  color: #666;
+  margin: 0;
+}
+
+.priority-sections {
+  margin-bottom: 40px;
+}
+
+.priority-section {
+  margin-bottom: 30px;
+  background: white;
+  padding: 25px;
+  border-radius: 8px;
+  border: 1px solid #e0e8f0;
+}
+
+.priority-section h3 {
+  font-size: 1.3em;
+  color: #1a3a5c;
+  margin: 0 0 15px 0;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #2c5aa0;
+}
+
+.checklist {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.checklist li {
+  padding: 10px 0 10px 30px;
+  position: relative;
+  color: #555;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.checklist li:last-child {
+  border-bottom: none;
+}
+
+.checkbox {
+  position: absolute;
+  left: 0;
+  top: 10px;
+  font-weight: 300;
+  color: #2c5aa0;
+  font-size: 1.2em;
+}
+
+.info-box {
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  border-left: 4px solid #2c5aa0;
+}
+
+.info-box h4 {
+  margin: 0 0 15px 0;
+  color: #1a3a5c;
+  font-size: 1.1em;
+}
+
+.info-box ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.info-box li {
+  padding: 8px 0;
+  color: #555;
+}
+
+.info-box li strong {
+  color: #1a3a5c;
+}
+
+.info-box.important {
+  background: #fff3cd;
+  border-left-color: #ffc107;
+}
+
+.info-box.resources {
+  background: #d1ecf1;
+  border-left-color: #17a2b8;
+}
+
+.next-steps-section {
+  background: #f0f4f8;
+  padding: 30px;
+  border-radius: 8px;
+  margin-top: 40px;
+}
+
+.next-steps-section h3 {
+  color: #1a3a5c;
+  margin-top: 0;
+}
+
+.next-steps-section p {
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.phase-links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.phase-link {
+  display: inline-block;
+  padding: 12px 20px;
+  background: #2c5aa0;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  width: fit-content;
+}
+
+.phase-link:hover {
+  background: #1a3a5c;
+  transform: translateX(4px);
+}
+
+@media (max-width: 768px) {
+  .phase-container {
+    padding: 20px 15px;
+  }
+
+  .phase-header h1 {
+    font-size: 2em;
+  }
+
+  .timeline-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .phase-links {
+    flex-direction: column;
+  }
+
+  .phase-link {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* Connecting with Recovery Community - Page CSS */
+.recovery-community-section {
+  margin-bottom: 30px;
+}
+
+.meeting-frequency {
+  font-size: 1.1em;
+  color: #2c5aa0;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+  .info-box ul li {
+    padding: 6px 0;
+    font-size: 0.95em;
+  }
+}.recovery-community-section {
+  margin-bottom: 30px;
+}
+
+.meeting-frequency {
+  font-size: 1.1em;
+  color: #2c5aa0;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+  .info-box ul li {
+    padding: 6px 0;
+    font-size: 0.95em;
+  }
+}</style></head><body><header class="site-header">
+  <div class="header-container">
+    <h1 class="site-title">Carolyn's Thailand Journey</h1>
+    <p class="site-tagline">Long-Term Visa Planning & Settlement Guide</p>
+  </div>
+</header><nav class="site-nav">
+  <div class="nav-container">
+    <a href="/carolyn-2/" class="nav-link">Home</a>
+    <a href="/carolyn-2/phase-1-pre-departure" class="nav-link">Phase 1: Pre-Departure</a>
+    <a href="/carolyn-2/phase-2-arrival-settling" class="nav-link active">Phase 2: Arrival & Settling</a>
+    <a href="/carolyn-2/phase-3-medical-plan" class="nav-link">Phase 3: Medical Plan</a>
+    <a href="/carolyn-2/phase-4-dtv-application" class="nav-link">Phase 4: DTV Application</a>
+    <a href="/carolyn-2/phase-5-long-term-settlement" class="nav-link">Phase 5: Long-Term</a>
+    <a href="/carolyn-2/timeline" class="nav-link">Timeline</a>
+    <a href="/carolyn-2/resources-tools" class="nav-link">Resources</a>
+  </div>
+</nav><div class="phase-container">
+  <div class="phase-header">
+    <h1>Connecting with Recovery Community</h1>
+    <p class="phase-subtitle">Building Your Support Network in Chiang Mai</p>
+  </div>
+
+  <div class="intro-section">
+    <p class="intro-text">One of the most critical aspects of your settling-in period is connecting with the recovery community. Chiang Mai has a robust network of AA meetings, Buddhist recovery programs, and counseling services. Establishing these connections early will provide essential emotional support, accountability, and social engagement as you transition to long-term life in Thailand.</p>
+  </div>
+
+  <div class="priority-sections">
+    <div class="priority-section">
+      <h3>AA Meetings in Chiang Mai</h3>
+      <div class="info-box">
+        <h4>Key Facts</h4>
+        <ul>
+          <li><strong>Frequency:</strong> 60+ AA meetings per week throughout Chiang Mai</li>
+          <li><strong>Variety:</strong> English-language, Thai-language, and bilingual meetings</li>
+          <li><strong>Locations:</strong> Coffee shops, community centers, temples, and expat hubs</li>
+          <li><strong>Cost:</strong> Free (voluntary donations typical $1-2 USD equivalent)</li>
+          <li><strong>Schedule:</strong> Meetings throughout the day—early morning, lunch, evening, and late night options</li>
+        </ul>
+      </div>
+      <ul class="checklist">
+        <li><span class="checkbox">☐</span> Search "AA Chiang Mai" on Facebook for current meeting schedules</li>
+        <li><span class="checkbox">☐</span> Join the "Chiang Mai AA" or "AA in Chiang Mai" Facebook group</li>
+        <li><span class="checkbox">☐</span> Attend 3-5 different meetings to find your preferred group and time</li>
+        <li><span class="checkbox">☐</span> Ask for phone numbers of group members who can provide ride coordination</li>
+        <li><span class="checkbox">☐</span> Introduce yourself and express openness to sponsorship</li>
+      </ul>
+    </div>
+
+    <div class="priority-section">
+      <h3>Buddhist Recovery & Refuge Recovery</h3>
+      <div class="info-box">
+        <h4>Complementary to AA</h4>
+        <ul>
+          <li><strong>Refuge Recovery:</strong> Buddhism-based recovery program with roots in Thailand</li>
+          <li><strong>Meditation Practice:</strong> Many meetings include meditation components</li>
+          <li><strong>Thai Temple Communities:</strong> Some temples offer meditation retreats specifically for expat recovery</li>
+          <li><strong>Spiritual Support:</strong> Complements 12-step recovery with Buddhist philosophy</li>
+        </ul>
+      </div>
+      <ul class="checklist">
+        <li><span class="checkbox">☐</span> Research local temples offering meditation and recovery support (check Chiang Mai expat groups)</li>
+        <li><span class="checkbox">☐</span> Look for "Refuge Recovery Chiang Mai" meetings or similar Buddhist recovery groups</li>
+        <li><span class="checkbox">☐</span> Consider attending meditation retreats (3-7 day immersive experiences available year-round)</li>
+        <li><span class="checkbox">☐</span> Connect with Thai monks or experienced practitioners for spiritual guidance</li>
+      </ul>
+    </div>
+
+    <div class="priority-section">
+      <h3>Finding a Sponsor</h3>
+      <div class="info-box">
+        <h4>Sponsorship in Chiang Mai</h4>
+        <ul>
+          <li><strong>Large Expat Network:</strong> Many sponsors with experience working with international clients</li>
+          <li><strong>Cross-Cultural Experience:</strong> Many sponsors understand visa challenges and cultural transitions</li>
+          <li><strong>Time Zone Consideration:</strong> Sponsors may be available for phone/video calls across global time zones</li>
+          <li><strong>Recovery Longevity:</strong> Many long-term expat sponsors have 5-20+ years of sobriety</li>
+        </ul>
+      </div>
+      <ul class="checklist">
+        <li><span class="checkbox">☐</span> Attend at least 5 different meetings before approaching potential sponsors</li>
+        <li><span class="checkbox">☐</span> Look for people with:  strong recovery, experience with recovery in Thailand, willingness to be available</li>
+        <li><span class="checkbox">☐</span> Ask for phone number and suggest a coffee meeting</li>
+        <li><span class="checkbox">☐</span> Be clear about your sponsorship expectations and your situation (new to Thailand, visa process, etc.)</li>
+        <li><span class="checkbox">☐</span> Plan for sponsor continuity if you need to travel for DTV visa processing in Vietnam</li>
+      </ul>
+    </div>
+
+    <div class="priority-section">
+      <h3>Professional Counseling & Therapy</h3>
+      <div class="info-box">
+        <h4>Counseling Options in Chiang Mai</h4>
+        <ul>
+          <li><strong>Counselling Thailand:</strong> English-speaking therapists, individual and group sessions</li>
+          <li><strong>The Cabin Alumni Network:</strong> Connection to treatment alumni if you've attended rehab programs</li>
+          <li><strong>Private Practitioners:</strong> Western-trained therapists ($40-80 USD per session vs. $150-300 in US)</li>
+          <li><strong>Art Therapy & Expressive Therapies:</strong> Complementary recovery modalities available</li>
+          <li><strong>Cost:</strong> Significantly less expensive than US therapy</li>
+        </ul>
+      </div>
+      <ul class="checklist">
+        <li><span class="checkbox">☐</span> Contact Counselling Thailand for initial consultation ($40-50)</li>
+        <li><span class="checkbox">☐</span> Ask about group therapy sessions focused on recovery and expat adjustment</li>
+        <li><span class="checkbox">☐</span> Inquire about art therapy, music therapy, or body-based therapies</li>
+        <li><span class="checkbox">☐</span> If applicable, reach out to The Cabin alumni network for referrals</li>
+        <li><span class="checkbox">☐</span> Consider virtual therapy sessions with US-based therapist if preferred (time zone compatible)</li>
+      </ul>
+    </div>
+
+    <div class="priority-section">
+      <h3>Building Broader Community Connections</h3>
+      <div class="info-box important">
+        <h4>Beyond Recovery—Social Integration</h4>
+        <ul>
+          <li><strong>Gym/Pool Membership:</strong> Social activity + physical health ($30-60/month)</li>
+          <li><strong>Expat Groups:</strong> Hiking, yoga, board games, art, cooking, crafting clubs</li>
+          <li><strong>Language Exchange:</strong> Learn Thai while teaching English to locals</li>
+          <li><strong>Volunteering:</strong> Teaching English, women's organizations, environmental groups</li>
+          <li><strong>Cultural Integration:</strong> Buddha temples, local festivals, Thai cooking classes</li>
+        </ul>
+      </div>
+      <ul class="checklist">
+        <li><span class="checkbox">☐</span> Join "Chiang Mai Expats" Facebook group and explore subgroups by interest</li>
+        <li><span class="checkbox">☐</span> Investigate gym/pool facilities in Suthep area (many have social programs)</li>
+        <li><span class="checkbox">☐</span> Sign up for at least one hobby group (yoga, hiking, art, cooking, board games)</li>
+        <li><span class="checkbox">☐</span> Research volunteering opportunities (teaching English, women's shelters, NGOs)</li>
+        <li><span class="checkbox">☐</span> Enroll in Thai language classes (many with social components)</li>
+        <li><span class="checkbox">☐</span> Attend local temple festivals and cultural events</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="info-box resources">
+    <h4>Resources & Contacts</h4>
+    <ul>
+      <li><strong>Facebook Groups:</strong> "Chiang Mai AA," "Chiang Mai Expats," "Refuge Recovery Chiang Mai"</li>
+      <li><strong>Counselling Thailand:</strong> English-speaking therapists specializing in expat adjustment and recovery</li>
+      <li><strong>Bangkok Hospital Chiang Mai:</strong> Has counselors available for ongoing support</li>
+      <li><strong>The Cabin:</strong> Alumni network available for connection if previously enrolled</li>
+      <li><strong>Meetup.com:</strong> Search "Chiang Mai" for hobby and interest groups</li>
+    </ul>
+  </div>
+
+  <div class="next-steps-section">
+    <h3>Your Next Steps</h3>
+    <p>During your first week in Chiang Mai, prioritize:</p>
+    <ol>
+      <li><strong>Locate and attend an AA meeting</strong> within your first 2-3 days</li>
+      <li><strong>Join relevant Facebook groups</strong> to see meeting schedules and connect with community</li>
+      <li><strong>Attend 3-5 different meetings</strong> to find your preferred time/group</li>
+      <li><strong>Connect with a potential sponsor</strong> by the end of week one</li>
+      <li><strong>Schedule therapy consultation</strong> if desired (good to have ongoing support established)</li>
+      <li><strong>Join one hobby/social group</strong> to expand beyond recovery community</li>
+    </ol>
+    <p style="margin-top: 20px; font-weight: 500; color: #1a3a5c;">Once you've established these connections, you'll have the emotional support infrastructure in place to focus on your medical plan preparation and DTV application process.</p>
+    <div class="phase-links" style="margin-top: 30px;">
+      <a href="/carolyn-2/phase-2-arrival-settling" class="phase-link">← Back to Phase 2: Arrival & Settling</a>
+      <a href="/carolyn-2/phase-2-arrival-settling/medical-setup" class="phase-link">Next: Medical Setup & Doctor Consultations →</a>
+    </div>
+  </div>
+</div><footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-section">
+      <h4>About This Guide</h4>
+      <p>A comprehensive resource for planning a long-term stay in Thailand using the Digital Nomad Visa (DTV) with medical treatment justification.</p>
+    </div>
+    <div class="footer-section">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="/carolyn-2/timeline">Full Timeline</a></li>
+        <li><a href="/carolyn-2/faq">FAQ</a></li>
+        <li><a href="/carolyn-2/budget-planning">Budget Planning</a></li>
+        <li><a href="/carolyn-2/resources-tools">Resources & Tools</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Important Notes</h4>
+      <p>This guide reflects current visa requirements and costs as of 2025. Always verify information with official embassy websites before making decisions.</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 Thailand Visa Planning Guide. Information is for educational purposes only.</p>
+  </div>
+</footer></body></html>
