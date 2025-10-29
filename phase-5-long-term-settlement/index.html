@@ -1,0 +1,1309 @@
+<!DOCTYPE html><html lang='en'><head><meta charset='UTF-8'><meta name='viewport' content='width=device-width, initial-scale=1.0'><title>Phase 5: Long-Term Settlement (180+ Days)</title><style>/* Global CSS
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: #fafbfc;
+}
+
+a {
+  color: #2c5aa0;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* HEADER STYLES */
+.site-header {
+  background: linear-gradient(135deg, #1a3a5c 0%, #2c5aa0 100%);
+  color: white;
+  padding: 40px 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.site-title {
+  margin: 0 0 8px 0;
+  font-size: 2.2em;
+  font-weight: 700;
+}
+
+.site-tagline {
+  margin: 0;
+  font-size: 1.1em;
+  opacity: 0.95;
+  font-weight: 300;
+}
+
+/* NAVIGATION STYLES */
+.site-nav {
+  background: white;
+  border-bottom: 2px solid #e0e8f0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.nav-link {
+  display: inline-block;
+  padding: 15px 16px;
+  color: #555;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95em;
+  transition: all 0.3s ease;
+  border-bottom: 3px solid transparent;
+}
+
+.nav-link:hover {
+  color: #2c5aa0;
+  border-bottom-color: #2c5aa0;
+}
+
+.nav-link.active {
+  color: #2c5aa0;
+  border-bottom-color: #2c5aa0;
+}
+
+/* FOOTER STYLES */
+.site-footer {
+  background: #1a3a5c;
+  color: #fff;
+  padding: 50px 20px 20px;
+  margin-top: 60px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  margin-bottom: 30px;
+}
+
+.footer-section h4 {
+  margin: 0 0 15px 0;
+  font-size: 1.1em;
+  font-weight: 600;
+}
+
+.footer-section p {
+  margin: 0 0 10px 0;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section li {
+  margin-bottom: 8px;
+}
+
+.footer-section a {
+  color: #a8c5e0;
+  transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: center;
+  opacity: 0.8;
+  font-size: 0.9em;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .site-header {
+    padding: 30px 15px;
+  }
+
+  .site-title {
+    font-size: 1.8em;
+  }
+
+  .site-tagline {
+    font-size: 1em;
+  }
+
+  .nav-container {
+    gap: 0;
+  }
+
+  .nav-link {
+    padding: 12px 12px;
+    font-size: 0.9em;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
+/* Phase 5: Long-Term Settlement (180+ Days) - Page CSS */
+.phase-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.phase-header {
+  margin-bottom: 40px;
+  padding-bottom: 30px;
+  border-bottom: 3px solid #2c5aa0;
+}
+
+.phase-header h1 {
+  margin: 0 0 12px 0;
+  font-size: 2.2em;
+  color: #1a3a5c;
+}
+
+.phase-subtitle {
+  margin: 0;
+  font-size: 1.2em;
+  color: #666;
+  font-weight: 300;
+}
+
+.phase-intro {
+  background: #f0f6ff;
+  padding: 20px;
+  border-left: 4px solid #2c5aa0;
+  margin-bottom: 40px;
+  border-radius: 4px;
+}
+
+.phase-intro p {
+  margin: 0;
+  font-size: 1.05em;
+  line-height: 1.7;
+}
+
+.phase-section {
+  margin-bottom: 50px;
+}
+
+.phase-section h2 {
+  font-size: 1.8em;
+  color: #1a3a5c;
+  margin-top: 0;
+  margin-bottom: 25px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #e0e8f0;
+}
+
+.phase-section h3 {
+  font-size: 1.3em;
+  color: #2c5aa0;
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+.overview-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.overview-card {
+  background: white;
+  border: 1px solid #e0e8f0;
+  border-radius: 8px;
+  padding: 25px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.overview-card:hover {
+  box-shadow: 0 4px 12px rgba(44, 90, 160, 0.15);
+  border-color: #2c5aa0;
+}
+
+.overview-card h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-size: 1.15em;
+}
+
+.overview-card p {
+  margin: 0;
+  color: #666;
+  line-height: 1.6;
+}
+
+.timeline-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.timeline-item {
+  background: white;
+  border-left: 4px solid #2c5aa0;
+  border-radius: 4px;
+  padding: 25px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.timeline-marker {
+  display: inline-block;
+  background: #2c5aa0;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.85em;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.timeline-item h3 {
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.task-list li {
+  padding-left: 24px;
+  margin-bottom: 10px;
+  position: relative;
+  color: #555;
+}
+
+.task-list li:before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #2c5aa0;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.visa-info-box {
+  background: #fff3e0;
+  border-left: 4px solid #ff9800;
+  padding: 25px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.visa-info-box h3 {
+  margin-top: 0;
+  color: #ff6f00;
+}
+
+.visa-info-box p {
+  margin: 10px 0;
+}
+
+.visa-options {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.option-box {
+  background: white;
+  border: 1px solid #ffe0b2;
+  border-radius: 6px;
+  padding: 20px;
+}
+
+.option-box h4 {
+  margin-top: 0;
+  color: #ff6f00;
+}
+
+.option-box ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.option-box li {
+  padding-left: 20px;
+  margin-bottom: 8px;
+  position: relative;
+  font-size: 0.95em;
+}
+
+.option-box li:before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #ff9800;
+}
+
+.section-link-box {
+  background: #f5f9ff;
+  border: 1px solid #d4e4f7;
+  border-radius: 6px;
+  padding: 20px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.btn-primary {
+  display: inline-block;
+  background: #2c5aa0;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.btn-primary:hover {
+  background: #1a3a5c;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(44, 90, 160, 0.3);
+}
+
+.info-list {
+  list-style: none;
+  padding: 0;
+  margin: 15px 0;
+}
+
+.info-list li {
+  padding-left: 24px;
+  margin-bottom: 12px;
+  position: relative;
+  line-height: 1.6;
+}
+
+.info-list li:before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: #2c5aa0;
+  font-weight: bold;
+}
+
+.budget-table {
+  margin-top: 20px;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+thead {
+  background: #2c5aa0;
+  color: white;
+}
+
+th {
+  padding: 15px;
+  text-align: left;
+  font-weight: 600;
+}
+
+td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #e0e8f0;
+}
+
+tbody tr:nth-child(even) {
+  background: #f9fbfd;
+}
+
+tbody tr:hover {
+  background: #f0f6ff;
+}
+
+.total-row {
+  background: #e8f0fc;
+  font-weight: 600;
+  color: #1a3a5c;
+}
+
+.budget-note {
+  font-size: 0.9em;
+  color: #666;
+  margin-top: 15px;
+  font-style: italic;
+}
+
+.challenges-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.challenge-card {
+  background: white;
+  border: 1px solid #e0e8f0;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.challenge-card h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 1.1em;
+  color: #1a3a5c;
+}
+
+.challenge-card p {
+  margin: 8px 0;
+  font-size: 0.95em;
+}
+
+.challenge-card strong {
+  color: #2c5aa0;
+}
+
+.next-steps-box {
+  background: #f0f6ff;
+  border: 2px solid #2c5aa0;
+  border-radius: 8px;
+  padding: 30px;
+  margin-top: 20px;
+}
+
+.next-steps-box h3 {
+  margin-top: 0;
+  color: #1a3a5c;
+}
+
+.next-steps-box h3:not(:first-child) {
+  margin-top: 25px;
+}
+
+.checkmark-list {
+  list-style: none;
+  padding: 0;
+  margin: 15px 0;
+}
+
+.checkmark-list li {
+  padding-left: 28px;
+  margin-bottom: 12px;
+  position: relative;
+}
+
+.checkmark-list li:before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #2c5aa0;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .phase-content {
+    padding: 25px 15px;
+  }
+
+  .phase-header h1 {
+    font-size: 1.7em;
+  }
+
+  .phase-subtitle {
+    font-size: 1em;
+  }
+
+  .phase-section h2 {
+    font-size: 1.5em;
+  }
+
+  .overview-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .visa-options {
+    grid-template-columns: 1fr;
+  }
+
+  .challenges-grid {
+    grid-template-columns: 1fr;
+  }
+
+  table {
+    font-size: 0.9em;
+  }
+
+  th, td {
+    padding: 10px;
+  }
+
+  .next-steps-box {
+    padding: 20px;
+  }
+}.phase-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.phase-header {
+  margin-bottom: 40px;
+  padding-bottom: 30px;
+  border-bottom: 3px solid #2c5aa0;
+}
+
+.phase-header h1 {
+  margin: 0 0 12px 0;
+  font-size: 2.2em;
+  color: #1a3a5c;
+}
+
+.phase-subtitle {
+  margin: 0;
+  font-size: 1.2em;
+  color: #666;
+  font-weight: 300;
+}
+
+.phase-intro {
+  background: #f0f6ff;
+  padding: 20px;
+  border-left: 4px solid #2c5aa0;
+  margin-bottom: 40px;
+  border-radius: 4px;
+}
+
+.phase-intro p {
+  margin: 0;
+  font-size: 1.05em;
+  line-height: 1.7;
+}
+
+.phase-section {
+  margin-bottom: 50px;
+}
+
+.phase-section h2 {
+  font-size: 1.8em;
+  color: #1a3a5c;
+  margin-top: 0;
+  margin-bottom: 25px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #e0e8f0;
+}
+
+.phase-section h3 {
+  font-size: 1.3em;
+  color: #2c5aa0;
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+.overview-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.overview-card {
+  background: white;
+  border: 1px solid #e0e8f0;
+  border-radius: 8px;
+  padding: 25px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.overview-card:hover {
+  box-shadow: 0 4px 12px rgba(44, 90, 160, 0.15);
+  border-color: #2c5aa0;
+}
+
+.overview-card h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-size: 1.15em;
+}
+
+.overview-card p {
+  margin: 0;
+  color: #666;
+  line-height: 1.6;
+}
+
+.timeline-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.timeline-item {
+  background: white;
+  border-left: 4px solid #2c5aa0;
+  border-radius: 4px;
+  padding: 25px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.timeline-marker {
+  display: inline-block;
+  background: #2c5aa0;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.85em;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.timeline-item h3 {
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.task-list li {
+  padding-left: 24px;
+  margin-bottom: 10px;
+  position: relative;
+  color: #555;
+}
+
+.task-list li:before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #2c5aa0;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.visa-info-box {
+  background: #fff3e0;
+  border-left: 4px solid #ff9800;
+  padding: 25px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.visa-info-box h3 {
+  margin-top: 0;
+  color: #ff6f00;
+}
+
+.visa-info-box p {
+  margin: 10px 0;
+}
+
+.visa-options {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.option-box {
+  background: white;
+  border: 1px solid #ffe0b2;
+  border-radius: 6px;
+  padding: 20px;
+}
+
+.option-box h4 {
+  margin-top: 0;
+  color: #ff6f00;
+}
+
+.option-box ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.option-box li {
+  padding-left: 20px;
+  margin-bottom: 8px;
+  position: relative;
+  font-size: 0.95em;
+}
+
+.option-box li:before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #ff9800;
+}
+
+.section-link-box {
+  background: #f5f9ff;
+  border: 1px solid #d4e4f7;
+  border-radius: 6px;
+  padding: 20px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.btn-primary {
+  display: inline-block;
+  background: #2c5aa0;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.btn-primary:hover {
+  background: #1a3a5c;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(44, 90, 160, 0.3);
+}
+
+.info-list {
+  list-style: none;
+  padding: 0;
+  margin: 15px 0;
+}
+
+.info-list li {
+  padding-left: 24px;
+  margin-bottom: 12px;
+  position: relative;
+  line-height: 1.6;
+}
+
+.info-list li:before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: #2c5aa0;
+  font-weight: bold;
+}
+
+.budget-table {
+  margin-top: 20px;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+thead {
+  background: #2c5aa0;
+  color: white;
+}
+
+th {
+  padding: 15px;
+  text-align: left;
+  font-weight: 600;
+}
+
+td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #e0e8f0;
+}
+
+tbody tr:nth-child(even) {
+  background: #f9fbfd;
+}
+
+tbody tr:hover {
+  background: #f0f6ff;
+}
+
+.total-row {
+  background: #e8f0fc;
+  font-weight: 600;
+  color: #1a3a5c;
+}
+
+.budget-note {
+  font-size: 0.9em;
+  color: #666;
+  margin-top: 15px;
+  font-style: italic;
+}
+
+.challenges-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.challenge-card {
+  background: white;
+  border: 1px solid #e0e8f0;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.challenge-card h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 1.1em;
+  color: #1a3a5c;
+}
+
+.challenge-card p {
+  margin: 8px 0;
+  font-size: 0.95em;
+}
+
+.challenge-card strong {
+  color: #2c5aa0;
+}
+
+.next-steps-box {
+  background: #f0f6ff;
+  border: 2px solid #2c5aa0;
+  border-radius: 8px;
+  padding: 30px;
+  margin-top: 20px;
+}
+
+.next-steps-box h3 {
+  margin-top: 0;
+  color: #1a3a5c;
+}
+
+.next-steps-box h3:not(:first-child) {
+  margin-top: 25px;
+}
+
+.checkmark-list {
+  list-style: none;
+  padding: 0;
+  margin: 15px 0;
+}
+
+.checkmark-list li {
+  padding-left: 28px;
+  margin-bottom: 12px;
+  position: relative;
+}
+
+.checkmark-list li:before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #2c5aa0;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .phase-content {
+    padding: 25px 15px;
+  }
+
+  .phase-header h1 {
+    font-size: 1.7em;
+  }
+
+  .phase-subtitle {
+    font-size: 1em;
+  }
+
+  .phase-section h2 {
+    font-size: 1.5em;
+  }
+
+  .overview-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .visa-options {
+    grid-template-columns: 1fr;
+  }
+
+  .challenges-grid {
+    grid-template-columns: 1fr;
+  }
+
+  table {
+    font-size: 0.9em;
+  }
+
+  th, td {
+    padding: 10px;
+  }
+
+  .next-steps-box {
+    padding: 20px;
+  }
+}</style></head><body><header class="site-header">
+  <div class="header-container">
+    <h1 class="site-title">Carolyn's Thailand Journey</h1>
+    <p class="site-tagline">Long-Term Visa Planning & Settlement Guide</p>
+  </div>
+</header><nav class="site-nav">
+  <div class="nav-container">
+    <a href="/carolyn-2/" class="nav-link">Home</a>
+    <a href="/carolyn-2/phase-1-pre-departure" class="nav-link">Phase 1: Pre-Departure</a>
+    <a href="/carolyn-2/phase-2-arrival-settling" class="nav-link active">Phase 2: Arrival & Settling</a>
+    <a href="/carolyn-2/phase-3-medical-plan" class="nav-link">Phase 3: Medical Plan</a>
+    <a href="/carolyn-2/phase-4-dtv-application" class="nav-link">Phase 4: DTV Application</a>
+    <a href="/carolyn-2/phase-5-long-term-settlement" class="nav-link">Phase 5: Long-Term</a>
+    <a href="/carolyn-2/timeline" class="nav-link">Timeline</a>
+    <a href="/carolyn-2/resources-tools" class="nav-link">Resources</a>
+  </div>
+</nav><main class="phase-content">
+  <div class="phase-header">
+    <h1>Phase 5: Long-Term Settlement (180+ Days)</h1>
+    <p class="phase-subtitle">Building a sustainable life in Thailand after DTV approval</p>
+  </div>
+
+  <div class="phase-intro">
+    <p>With your 5-year DTV visa approved, you can now focus on building a sustainable, fulfilling life in Thailand. This phase covers deeper community integration, finding permanent housing, developing routines, and maintaining your visa status long-term.</p>
+  </div>
+
+  <section class="phase-section">
+    <h2>Overview: What This Phase Includes</h2>
+    <div class="overview-grid">
+      <div class="overview-card">
+        <h3>🏠 Housing & Logistics</h3>
+        <p>Transition from temporary to permanent housing, set up utilities, and establish your home base in Chiang Mai.</p>
+      </div>
+      <div class="overview-card">
+        <h3>👥 Community Integration</h3>
+        <p>Deepen connections with expat and local communities through activities, volunteering, and social networks.</p>
+      </div>
+      <div class="overview-card">
+        <h3>💪 Health & Wellness</h3>
+        <p>Establish ongoing physical therapy, medical care, and self-care routines that support your recovery.</p>
+      </div>
+      <div class="overview-card">
+        <h3>📋 Visa Maintenance</h3>
+        <p>Understand your DTV requirements and plan for visa extensions or border runs to maintain legal status.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="phase-section">
+    <h2>Key Tasks & Timeline</h2>
+    <div class="timeline-container">
+      <div class="timeline-item">
+        <div class="timeline-marker">Nov 20 onwards</div>
+        <h3>Immediate: Establish Routines (First Month)</h3>
+        <ul class="task-list">
+          <li>Transition from temporary to permanent housing</li>
+          <li>Set up long-term accommodations in Suthep or preferred area</li>
+          <li>Establish regular physical therapy schedule</li>
+          <li>Create daily/weekly routine with work, PT, recovery activities</li>
+          <li>Register with local hospital or clinic for ongoing care</li>
+        </ul>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-marker">Months 2-3</div>
+        <h3>Deepen Community Connections</h3>
+        <ul class="task-list">
+          <li>Expand beyond initial recovery community into broader social circles</li>
+          <li>Join activity groups: yoga, hiking, art, cooking, board games</li>
+          <li>Explore volunteering opportunities (teaching English, women's orgs)</li>
+          <li>Develop meaningful friendships both with expats and locals</li>
+          <li>Attend cultural events and festivals</li>
+        </ul>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-marker">Months 4-6</div>
+        <h3>Optimize Long-Term Setup</h3>
+        <ul class="task-list">
+          <li>Refine housing situation based on experience</li>
+          <li>Establish Thai language learning routine</li>
+          <li>Develop sustainable budget and expense tracking</li>
+          <li>Plan potential short trips (Vietnam, Laos, Bali)</li>
+          <li>Review and optimize healthcare providers and services</li>
+        </ul>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-marker">Ongoing</div>
+        <h3>Visa Maintenance</h3>
+        <ul class="task-list">
+          <li>Understand DTV entry requirements: 180-day stay allowed</li>
+          <li>Option 1: Border run every 180 days for fresh entry</li>
+          <li>Option 2: Get 360-day extension (~$300) for continuous stay</li>
+          <li>Keep passport, DTV documents, and medical records organized</li>
+          <li>Stay informed about visa policy changes</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="phase-section">
+    <h2>Visa Maintenance Explained</h2>
+    <div class="visa-info-box">
+      <h3>Your 5-Year DTV Status</h3>
+      <p><strong>Duration:</strong> 5 years from approval date</p>
+      <p><strong>Each Entry Stamp:</strong> 180 days validity</p>
+      
+      <div class="visa-options">
+        <div class="option-box">
+          <h4>Option A: Border Runs (Every 180 days)</h4>
+          <ul>
+            <li>Exit Thailand before day 180 (e.g., to Laos or Malaysia)</li>
+            <li>Re-enter with your DTV to get a fresh 180-day stamp</li>
+            <li>Cost: ~$50-200 depending on destination</li>
+            <li>Pros: Flexibility, no extra fees</li>
+            <li>Cons: Requires travel, can be tiring</li>
+          </ul>
+        </div>
+        <div class="option-box">
+          <h4>Option B: 360-Day Extension</h4>
+          <ul>
+            <li>Apply at Thai immigration before day 180</li>
+            <li>Pay extension fee (~$300 / 9,000 THB)</li>
+            <li>Get approved for 360-day continuous stay</li>
+            <li>Pros: Stay for full year without leaving</li>
+            <li>Cons: Additional cost, immigration process</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="phase-section">
+    <h2>Housing & Community</h2>
+    <p>Finding the right housing and building community are critical for long-term satisfaction. See the detailed guide below for comprehensive information on housing search, neighborhoods, and community integration.</p>
+    <div class="section-link-box">
+      <a href="/carolyn-2/phase-5-long-term-settlement/housing-community" class="btn-primary">→ Housing & Community Guide</a>
+    </div>
+  </section>
+
+  <section class="phase-section">
+    <h2>Health & Wellness Routine</h2>
+    <h3>Physical Therapy Continuation</h3>
+    <ul class="info-list">
+      <li><strong>Frequency:</strong> Maintain 1-3x weekly sessions based on progress</li>
+      <li><strong>Cost:</strong> $25-75/session (vs $100+ in US)</li>
+      <li><strong>Providers:</strong> Bangkok Hospital, private clinics, or recommended therapists</li>
+      <li><strong>Insurance:</strong> Confirm coverage with your plan</li>
+    </ul>
+
+    <h3>General Health Management</h3>
+    <ul class="info-list">
+      <li><strong>Primary Care:</strong> Regular check-ups every 3-6 months</li>
+      <li><strong>Medications:</strong> Most medications available at Thai pharmacies for a fraction of US cost</li>
+      <li><strong>Prescriptions:</strong> Work with local doctor to continue current medications or find Thai equivalents</li>
+      <li><strong>Dental/Vision:</strong> Excellent and affordable services available</li>
+      <li><strong>Emergency Care:</strong> 24/7 English-speaking facilities available</li>
+    </ul>
+
+    <h3>Wellness Activities</h3>
+    <ul class="info-list">
+      <li>Yoga and meditation classes (abundant in Chiang Mai)</li>
+      <li>Swimming and gym memberships ($15-30/month)</li>
+      <li>Outdoor activities: hiking, walking, exploring nature</li>
+      <li>Relaxation: massage, spa treatments (very affordable)</li>
+      <li>Recovery support: AA meetings, counseling, community groups</li>
+    </ul>
+  </section>
+
+  <section class="phase-section">
+    <h2>Budget Considerations for Long-Term Stay</h2>
+    <div class="budget-table">
+      <table>
+        <thead>
+          <tr>
+            <th>Category</th>
+            <th>Low Budget</th>
+            <th>Mid Budget</th>
+            <th>Comfortable</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Housing (monthly)</td>
+            <td>$250-400</td>
+            <td>$400-700</td>
+            <td>$700-1,200+</td>
+          </tr>
+          <tr>
+            <td>Food & Dining</td>
+            <td>$200-300</td>
+            <td>$300-500</td>
+            <td>$500-800+</td>
+          </tr>
+          <tr>
+            <td>Physical Therapy (monthly)</td>
+            <td>$100-150</td>
+            <td>$150-225</td>
+            <td>$225-300+</td>
+          </tr>
+          <tr>
+            <td>Healthcare & Insurance</td>
+            <td>$50-100</td>
+            <td>$100-200</td>
+            <td>$200-400+</td>
+          </tr>
+          <tr>
+            <td>Activities & Social</td>
+            <td>$100-150</td>
+            <td>$150-300</td>
+            <td>$300-500+</td>
+          </tr>
+          <tr>
+            <td>Transportation</td>
+            <td>$30-50</td>
+            <td>$50-100</td>
+            <td>$100-200+</td>
+          </tr>
+          <tr class="total-row">
+            <td><strong>Total Monthly</strong></td>
+            <td><strong>$730-1,150</strong></td>
+            <td><strong>$1,150-2,025</strong></td>
+            <td><strong>$2,025-3,500+</strong></td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="budget-note">Note: Costs vary significantly based on lifestyle choices, housing location, and personal health needs. These are estimates for a comfortable expat lifestyle in Chiang Mai.</p>
+    </div>
+  </section>
+
+  <section class="phase-section">
+    <h2>Common Challenges & Solutions</h2>
+    <div class="challenges-grid">
+      <div class="challenge-card">
+        <h3>Visa Fatigue</h3>
+        <p><strong>Challenge:</strong> Managing border runs or extensions can feel tedious.</p>
+        <p><strong>Solution:</strong> Plan border runs as mini-trips (Vietnam, Laos) to make them enjoyable rather than a chore. Or use the 360-day extension for stability.</p>
+      </div>
+      <div class="challenge-card">
+        <h3>Social Isolation</h3>
+        <p><strong>Challenge:</strong> Even with community, some people struggle with long-term friendship building.</p>
+        <p><strong>Solution:</strong> Commit to regular activities and groups. Join multiple communities. Be proactive in reaching out to people.</p>
+      </div>
+      <div class="challenge-card">
+        <h3>Healthcare Continuity</h3>
+        <p><strong>Challenge:</strong> Maintaining consistent care with language/cultural barriers.</p>
+        <p><strong>Solution:</strong> Use internationally-trained doctors, keep detailed medical records, and establish relationships with specific providers.</p>
+      </div>
+      <div class="challenge-card">
+        <h3>Budget Creep</h3>
+        <p><strong>Challenge:</strong> Lifestyle inflation as you settle in.</p>
+        <p><strong>Solution:</strong> Track expenses monthly, set spending limits for different categories, and review quarterly.</p>
+      </div>
+      <div class="challenge-card">
+        <h3>Burnout from Healthcare</h3>
+        <p><strong>Challenge:</strong> Ongoing PT and medical needs can feel overwhelming.</p>
+        <p><strong>Solution:</strong> Balance therapy with wellness activities, take "health breaks," and work with providers on realistic schedules.</p>
+      </div>
+      <div class="challenge-card">
+        <h3>Language Barrier</h3>
+        <p><strong>Challenge:</strong> Limited Thai language skills can hinder deeper integration.</p>
+        <p><strong>Solution:</strong> Commit to regular language study. Use apps like Duolingo or take classes. Even basic phrases help significantly.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="phase-section">
+    <h2>Moving Forward</h2>
+    <div class="next-steps-box">
+      <h3>Your Long-Term Outlook</h3>
+      <p>Congratulations on obtaining your DTV visa! You now have 5 years of legal status to build the life you want in Thailand. This phase is about transitioning from "visa survival mode" to genuine settlement and community building.</p>
+      
+      <h3>Key Reminders</h3>
+      <ul class="checkmark-list">
+        <li>Your DTV visa is valid for 5 years, with 180-day validity per entry</li>
+        <li>Plan for visa management early (border runs or extensions)</li>
+        <li>Invest in community and friendships—they're crucial for long-term happiness</li>
+        <li>Maintain your health and therapy routines</li>
+        <li>Stay financially disciplined but allow yourself to enjoy your time</li>
+        <li>Be flexible and adjust your plan as needed</li>
+      </ul>
+
+      <h3>Continue Exploring</h3>
+      <p>For detailed guidance on finding housing and integrating into community, visit the <a href="/carolyn-2/phase-5-long-term-settlement/housing-community">Housing & Community Guide</a>. For overall planning tools and resources, check out the <a href="/carolyn-2/resources-tools">Resources & Tools</a> section.</p>
+    </div>
+  </section>
+</main><footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-section">
+      <h4>About This Guide</h4>
+      <p>A comprehensive resource for planning a long-term stay in Thailand using the Digital Nomad Visa (DTV) with medical treatment justification.</p>
+    </div>
+    <div class="footer-section">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="/carolyn-2/timeline">Full Timeline</a></li>
+        <li><a href="/carolyn-2/faq">FAQ</a></li>
+        <li><a href="/carolyn-2/budget-planning">Budget Planning</a></li>
+        <li><a href="/carolyn-2/resources-tools">Resources & Tools</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Important Notes</h4>
+      <p>This guide reflects current visa requirements and costs as of 2025. Always verify information with official embassy websites before making decisions.</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 Thailand Visa Planning Guide. Information is for educational purposes only.</p>
+  </div>
+</footer></body></html>
