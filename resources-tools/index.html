@@ -1,0 +1,885 @@
+<!DOCTYPE html><html lang='en'><head><meta charset='UTF-8'><meta name='viewport' content='width=device-width, initial-scale=1.0'><title>Resources & Tools</title><style>/* Global CSS
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: #fafbfc;
+}
+
+a {
+  color: #2c5aa0;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* HEADER STYLES */
+.site-header {
+  background: linear-gradient(135deg, #1a3a5c 0%, #2c5aa0 100%);
+  color: white;
+  padding: 40px 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.site-title {
+  margin: 0 0 8px 0;
+  font-size: 2.2em;
+  font-weight: 700;
+}
+
+.site-tagline {
+  margin: 0;
+  font-size: 1.1em;
+  opacity: 0.95;
+  font-weight: 300;
+}
+
+/* NAVIGATION STYLES */
+.site-nav {
+  background: white;
+  border-bottom: 2px solid #e0e8f0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.nav-link {
+  display: inline-block;
+  padding: 15px 16px;
+  color: #555;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95em;
+  transition: all 0.3s ease;
+  border-bottom: 3px solid transparent;
+}
+
+.nav-link:hover {
+  color: #2c5aa0;
+  border-bottom-color: #2c5aa0;
+}
+
+.nav-link.active {
+  color: #2c5aa0;
+  border-bottom-color: #2c5aa0;
+}
+
+/* FOOTER STYLES */
+.site-footer {
+  background: #1a3a5c;
+  color: #fff;
+  padding: 50px 20px 20px;
+  margin-top: 60px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  margin-bottom: 30px;
+}
+
+.footer-section h4 {
+  margin: 0 0 15px 0;
+  font-size: 1.1em;
+  font-weight: 600;
+}
+
+.footer-section p {
+  margin: 0 0 10px 0;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section li {
+  margin-bottom: 8px;
+}
+
+.footer-section a {
+  color: #a8c5e0;
+  transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: center;
+  opacity: 0.8;
+  font-size: 0.9em;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .site-header {
+    padding: 30px 15px;
+  }
+
+  .site-title {
+    font-size: 1.8em;
+  }
+
+  .site-tagline {
+    font-size: 1em;
+  }
+
+  .nav-container {
+    gap: 0;
+  }
+
+  .nav-link {
+    padding: 12px 12px;
+    font-size: 0.9em;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
+/* Resources & Tools - Page CSS */
+.resources-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.page-intro {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.page-intro h1 {
+  font-size: 2.5em;
+  color: #1a3a5c;
+  margin: 0 0 15px 0;
+  font-weight: 700;
+}
+
+.page-intro p {
+  font-size: 1.1em;
+  color: #666;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+.resources-grid {
+  display: grid;
+  gap: 40px;
+}
+
+.resource-section {
+  background: white;
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  border-left: 4px solid #2c5aa0;
+}
+
+.resource-section h2 {
+  color: #1a3a5c;
+  font-size: 1.6em;
+  margin: 0 0 25px 0;
+  font-weight: 600;
+  border-bottom: 2px solid #e0e8f0;
+  padding-bottom: 12px;
+}
+
+.resource-list {
+  display: grid;
+  gap: 20px;
+}
+
+.resource-item {
+  padding: 15px;
+  background: #f8fbfd;
+  border-radius: 6px;
+  border: 1px solid #e0e8f0;
+  transition: all 0.3s ease;
+}
+
+.resource-item:hover {
+  box-shadow: 0 4px 12px rgba(44, 90, 160, 0.1);
+  border-color: #2c5aa0;
+}
+
+.resource-item h3 {
+  color: #2c5aa0;
+  font-size: 1.1em;
+  margin: 0 0 8px 0;
+  font-weight: 600;
+}
+
+.resource-item p {
+  color: #666;
+  margin: 8px 0;
+  font-size: 0.95em;
+  line-height: 1.6;
+}
+
+.resource-link {
+  display: inline-block;
+  margin-top: 10px;
+  color: #2c5aa0;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.resource-link:hover {
+  color: #1a3a5c;
+  text-decoration: none;
+}
+
+.resource-link::after {
+  content: '';
+}
+
+/* DOWNLOAD BUTTONS */
+.download-btn {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 10px 18px;
+  background: #2c5aa0;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.9em;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.download-btn:hover {
+  background: #1a3a5c;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(44, 90, 160, 0.2);
+}
+
+.download-btn:active {
+  transform: translateY(0);
+}
+
+/* QUICK REFERENCE SECTION */
+.quick-reference {
+  background: linear-gradient(135deg, #f8fbfd 0%, #e8f1f8 100%);
+  border-left: 4px solid #2c5aa0;
+}
+
+.reference-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  margin-top: 25px;
+}
+
+.reference-card {
+  background: white;
+  padding: 20px;
+  border-radius: 6px;
+  border: 1px solid #d4e4f0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.reference-card h3 {
+  color: #2c5aa0;
+  margin: 0 0 12px 0;
+  font-size: 1.05em;
+  font-weight: 600;
+}
+
+.reference-card p {
+  color: #666;
+  margin: 0;
+  font-size: 0.95em;
+  line-height: 1.6;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .resources-container {
+    padding: 25px 15px;
+  }
+
+  .page-intro h1 {
+    font-size: 2em;
+  }
+
+  .page-intro p {
+    font-size: 1em;
+  }
+
+  .resource-section {
+    padding: 20px;
+  }
+
+  .resource-section h2 {
+    font-size: 1.3em;
+  }
+
+  .reference-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .resource-list {
+    gap: 15px;
+  }
+
+  .resource-item {
+    padding: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .resources-container {
+    padding: 15px 10px;
+  }
+
+  .page-intro h1 {
+    font-size: 1.6em;
+  }
+
+  .resource-section {
+    padding: 15px;
+  }
+
+  .resource-section h2 {
+    font-size: 1.2em;
+  }
+}.resources-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.page-intro {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.page-intro h1 {
+  font-size: 2.5em;
+  color: #1a3a5c;
+  margin: 0 0 15px 0;
+  font-weight: 700;
+}
+
+.page-intro p {
+  font-size: 1.1em;
+  color: #666;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+.resources-grid {
+  display: grid;
+  gap: 40px;
+}
+
+.resource-section {
+  background: white;
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  border-left: 4px solid #2c5aa0;
+}
+
+.resource-section h2 {
+  color: #1a3a5c;
+  font-size: 1.6em;
+  margin: 0 0 25px 0;
+  font-weight: 600;
+  border-bottom: 2px solid #e0e8f0;
+  padding-bottom: 12px;
+}
+
+.resource-list {
+  display: grid;
+  gap: 20px;
+}
+
+.resource-item {
+  padding: 15px;
+  background: #f8fbfd;
+  border-radius: 6px;
+  border: 1px solid #e0e8f0;
+  transition: all 0.3s ease;
+}
+
+.resource-item:hover {
+  box-shadow: 0 4px 12px rgba(44, 90, 160, 0.1);
+  border-color: #2c5aa0;
+}
+
+.resource-item h3 {
+  color: #2c5aa0;
+  font-size: 1.1em;
+  margin: 0 0 8px 0;
+  font-weight: 600;
+}
+
+.resource-item p {
+  color: #666;
+  margin: 8px 0;
+  font-size: 0.95em;
+  line-height: 1.6;
+}
+
+.resource-link {
+  display: inline-block;
+  margin-top: 10px;
+  color: #2c5aa0;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.resource-link:hover {
+  color: #1a3a5c;
+  text-decoration: none;
+}
+
+.resource-link::after {
+  content: '';
+}
+
+/* DOWNLOAD BUTTONS */
+.download-btn {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 10px 18px;
+  background: #2c5aa0;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.9em;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.download-btn:hover {
+  background: #1a3a5c;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(44, 90, 160, 0.2);
+}
+
+.download-btn:active {
+  transform: translateY(0);
+}
+
+/* QUICK REFERENCE SECTION */
+.quick-reference {
+  background: linear-gradient(135deg, #f8fbfd 0%, #e8f1f8 100%);
+  border-left: 4px solid #2c5aa0;
+}
+
+.reference-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  margin-top: 25px;
+}
+
+.reference-card {
+  background: white;
+  padding: 20px;
+  border-radius: 6px;
+  border: 1px solid #d4e4f0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.reference-card h3 {
+  color: #2c5aa0;
+  margin: 0 0 12px 0;
+  font-size: 1.05em;
+  font-weight: 600;
+}
+
+.reference-card p {
+  color: #666;
+  margin: 0;
+  font-size: 0.95em;
+  line-height: 1.6;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .resources-container {
+    padding: 25px 15px;
+  }
+
+  .page-intro h1 {
+    font-size: 2em;
+  }
+
+  .page-intro p {
+    font-size: 1em;
+  }
+
+  .resource-section {
+    padding: 20px;
+  }
+
+  .resource-section h2 {
+    font-size: 1.3em;
+  }
+
+  .reference-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .resource-list {
+    gap: 15px;
+  }
+
+  .resource-item {
+    padding: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .resources-container {
+    padding: 15px 10px;
+  }
+
+  .page-intro h1 {
+    font-size: 1.6em;
+  }
+
+  .resource-section {
+    padding: 15px;
+  }
+
+  .resource-section h2 {
+    font-size: 1.2em;
+  }
+}</style></head><body><header class="site-header">
+  <div class="header-container">
+    <h1 class="site-title">Carolyn's Thailand Journey</h1>
+    <p class="site-tagline">Long-Term Visa Planning & Settlement Guide</p>
+  </div>
+</header><nav class="site-nav">
+  <div class="nav-container">
+    <a href="/carolyn-2/" class="nav-link">Home</a>
+    <a href="/carolyn-2/phase-1-pre-departure" class="nav-link">Phase 1: Pre-Departure</a>
+    <a href="/carolyn-2/phase-2-arrival-settling" class="nav-link active">Phase 2: Arrival & Settling</a>
+    <a href="/carolyn-2/phase-3-medical-plan" class="nav-link">Phase 3: Medical Plan</a>
+    <a href="/carolyn-2/phase-4-dtv-application" class="nav-link">Phase 4: DTV Application</a>
+    <a href="/carolyn-2/phase-5-long-term-settlement" class="nav-link">Phase 5: Long-Term</a>
+    <a href="/carolyn-2/timeline" class="nav-link">Timeline</a>
+    <a href="/carolyn-2/resources-tools" class="nav-link">Resources</a>
+  </div>
+</nav><div class="resources-container">
+  <div class="page-intro">
+    <h1>Resources & Tools</h1>
+    <p>Curated collection of helpful links, contact information, and downloadable templates for your Thailand visa application and relocation journey.</p>
+  </div>
+
+  <div class="resources-grid">
+    <!-- OFFICIAL RESOURCES -->
+    <section class="resource-section">
+      <h2>Official Government Resources</h2>
+      <div class="resource-list">
+        <div class="resource-item">
+          <h3>Thai Immigration Bureau</h3>
+          <p>Official Thai immigration information and visa requirements</p>
+          <a href="https://www.immigration.go.th" target="_blank" class="resource-link">immigration.go.th →</a>
+        </div>
+        <div class="resource-item">
+          <h3>Thai e-Visa System</h3>
+          <p>Online visa application portal for DTV and other visa types</p>
+          <a href="https://thaievisa.go.th" target="_blank" class="resource-link">thaievisa.go.th →</a>
+        </div>
+        <div class="resource-item">
+          <h3>US State Department - Thailand</h3>
+          <p>US embassy information and travel advisories for Thailand</p>
+          <a href="https://th.usembassy.gov" target="_blank" class="resource-link">th.usembassy.gov →</a>
+        </div>
+        <div class="resource-item">
+          <h3>Vietnamese Embassy Resources</h3>
+          <p>Information for tourist visa applications to Vietnam</p>
+          <a href="https://vietnamembassy-usa.org" target="_blank" class="resource-link">vietnamembassy-usa.org →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- MEDICAL RESOURCES -->
+    <section class="resource-section">
+      <h2>Medical & Healthcare</h2>
+      <div class="resource-list">
+        <div class="resource-item">
+          <h3>Bangkok Hospital Chiang Mai</h3>
+          <p><strong>Contact:</strong> +66 (0)5324-5000<br>
+          <strong>Address:</strong> 2/1 Chang Pueuk Road, Chiang Mai 50300<br>
+          Recommended for DTV medical consultation and letters</p>
+          <a href="https://www.bangkokhospital.com/en/bangkok-hospital-chiang-mai" target="_blank" class="resource-link">Website →</a>
+        </div>
+        <div class="resource-item">
+          <h3>Health Care Medical Clinic</h3>
+          <p><strong>Contact:</strong> +66 (0)5327-8443<br>
+          Recommended primary care physician: Dr. Morgan<br>
+          English-speaking staff, affordable consultation</p>
+        </div>
+        <div class="resource-item">
+          <h3>Physical Therapy in Chiang Mai</h3>
+          <p>Expect to pay $25-75 per session vs $100+ in the US<br>
+          Bangkok Hospital and private clinics offer excellent PT services</p>
+        </div>
+        <div class="resource-item">
+          <h3>Medical Records Repository</h3>
+          <p><strong>Important:</strong> Gather all US medical records before departure including MRI scans, X-rays, surgical reports, and specialist letters. These are essential for DTV approval.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMMUNITY & SUPPORT -->
+    <section class="resource-section">
+      <h2>Community & Support Resources</h2>
+      <div class="resource-list">
+        <div class="resource-item">
+          <h3>Chiang Mai Expat Community</h3>
+          <p>Search for "Chiang Mai Expats" on Facebook to find housing groups, activity groups, and general information networks. 100+ active groups available.</p>
+        </div>
+        <div class="resource-item">
+          <h3>AA Meetings in Chiang Mai</h3>
+          <p>50+ AA meetings per week in Chiang Mai with many English-language options. Search local AA directories or ask at your accommodation.</p>
+        </div>
+        <div class="resource-item">
+          <h3>Counselling Thailand</h3>
+          <p>Professional addiction counseling and mental health services. English-speaking therapists available.</p>
+        </div>
+        <div class="resource-item">
+          <h3>The Cabin Thailand Alumni Network</h3>
+          <p>Connect with others who completed recovery programs at The Cabin or similar facilities in Thailand.</p>
+        </div>
+        <div class="resource-item">
+          <h3>Refuge Recovery Thailand</h3>
+          <p>Buddhist-based recovery meetings and community support</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRANSPORTATION & SERVICES -->
+    <section class="resource-section">
+      <h2>Transportation & Daily Services</h2>
+      <div class="resource-list">
+        <div class="resource-item">
+          <h3>Grab App</h3>
+          <p>Download and set up immediately upon arrival. Inexpensive taxis and motorbike transportation throughout Chiang Mai.</p>
+          <a href="https://grab.com" target="_blank" class="resource-link">Download Grab →</a>
+        </div>
+        <div class="resource-item">
+          <h3>Thai SIM Cards</h3>
+          <p>Available at airport upon arrival. Major providers: AIS, DTAC, TrueMove. Get set up immediately for local calls and data.</p>
+        </div>
+        <div class="resource-item">
+          <h3>ATM & Banking</h3>
+          <p><strong>ATM Fees:</strong> 220 THB (~$6.50) per withdrawal from foreign ATMs. Consider opening a Thai bank account after arrival (Bangkok Bank, Krung Thai, etc.)</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOUSING & ACCOMMODATION -->
+    <section class="resource-section">
+      <h2>Housing & Accommodation</h2>
+      <div class="resource-list">
+        <div class="resource-item">
+          <h3>Suthep Area Housing</h3>
+          <p><strong>Price Range:</strong> $250-500/month for furnished apartments<br>
+          <strong>Why Suthep:</strong> Large expat community, close to amenities, excellent walkability</p>
+        </div>
+        <div class="resource-item">
+          <h3>Cleaning Services</h3>
+          <p><strong>Cost:</strong> 500-800 THB (~$15-24) for 2-3 hours of professional cleaning<br>
+          Widely available and affordable in Chiang Mai</p>
+        </div>
+        <div class="resource-item">
+          <h3>Accommodation Search Platforms</h3>
+          <p>Airbnb, Booking.com, and local Facebook groups for apartment rentals and temporary stays</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FINANCIAL RESOURCES -->
+    <section class="resource-section">
+      <h2>Financial & Visa Requirements</h2>
+      <div class="resource-list">
+        <div class="resource-item">
+          <h3>DTV Financial Requirements</h3>
+          <p><strong>Minimum Balance:</strong> 500,000 THB (~$15,000 USD)<br>
+          <strong>Duration:</strong> Must maintain balance for 3+ months<br>
+          <strong>Currency:</strong> Can be in Thai or US bank account</p>
+        </div>
+        <div class="resource-item">
+          <h3>Financial Sponsor Documentation</h3>
+          <p><strong>Required:</strong><br>
+          - Bank statements showing 500,000+ THB for 3+ months<br>
+          - Sponsorship letter committing to emergency financial support<br>
+          - Proof of relationship (birth certificate, etc.)</p>
+        </div>
+        <div class="resource-item">
+          <h3>DTV Application Fee</h3>
+          <p><strong>Cost:</strong> $340 USD (non-refundable)<br>
+          <strong>Payment:</strong> Online during application at thaievisa.go.th</p>
+        </div>
+        <div class="resource-item">
+          <h3>Visa Extension Fee</h3>
+          <p><strong>30-Day Extension:</strong> 1,900 THB (~$55)<br>
+          <strong>6-Month Extension:</strong> ~$300<br>
+          Applied at Thai Immigration office</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRAVEL INSURANCE -->
+    <section class="resource-section">
+      <h2>Travel & Health Insurance</h2>
+      <div class="resource-list">
+        <div class="resource-item">
+          <h3>Travel Health Insurance</h3>
+          <p>Arrange before departure. Look for plans covering medical evacuation and pre-existing conditions treatment.</p>
+        </div>
+        <div class="resource-item">
+          <h3>Medical Tourism Insurance</h3>
+          <p>Some insurers specialize in coverage for medical treatment abroad, including physical therapy and rehabilitation services.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- DOWNLOADABLE TEMPLATES -->
+    <section class="resource-section">
+      <h2>Downloadable Templates & Checklists</h2>
+      <div class="resource-list">
+        <div class="resource-item">
+          <h3>DTV Application Checklist</h3>
+          <p>Complete checklist of all required documents for DTV visa application</p>
+          <button class="download-btn" onclick="downloadTemplate('dtv-checklist')">Download PDF</button>
+        </div>
+        <div class="resource-item">
+          <h3>Medical Documentation Template</h3>
+          <p>Template letter to request from US doctors for visa justification</p>
+          <button class="download-btn" onclick="downloadTemplate('medical-template')">Download PDF</button>
+        </div>
+        <div class="resource-item">
+          <h3>Financial Sponsor Letter Template</h3>
+          <p>Template for sponsor commitment letter (customize with sponsor info)</p>
+          <button class="download-btn" onclick="downloadTemplate('sponsor-letter')">Download PDF</button>
+        </div>
+        <div class="resource-item">
+          <h3>Pre-Departure Packing Checklist</h3>
+          <p>Comprehensive checklist for essential items and documents to pack</p>
+          <button class="download-btn" onclick="downloadTemplate('packing-checklist')">Download PDF</button>
+        </div>
+        <div class="resource-item">
+          <h3>Thailand Budget Template</h3>
+          <p>Spreadsheet template for tracking and planning monthly expenses in Thailand</p>
+          <button class="download-btn" onclick="downloadTemplate('budget-template')">Download Excel</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUICK REFERENCE -->
+    <section class="resource-section quick-reference">
+      <h2>Quick Reference</h2>
+      <div class="reference-grid">
+        <div class="reference-card">
+          <h3>Visa Exemption</h3>
+          <p>US citizens get automatic 60-day visa exemption upon arrival. No advance visa required.</p>
+        </div>
+        <div class="reference-card">
+          <h3>DTV Processing Timeline</h3>
+          <p><strong>Official:</strong> 5 working days<br>
+          <strong>Realistic:</strong> 2 days to 2 weeks</p>
+        </div>
+        <div class="reference-card">
+          <h3>Vietnam Visa Info</h3>
+          <p>US citizens need visa for Vietnam. Cost: $25 online. Processing: 3-7 days.</p>
+        </div>
+        <div class="reference-card">
+          <h3>Currency Exchange</h3>
+          <p>Approximate rates (subject to change):<br>
+          1 USD = ~33 THB<br>
+          Use XE.com for current rates</p>
+        </div>
+        <div class="reference-card">
+          <h3>Emergency Contacts</h3>
+          <p>Thailand Police: 191<br>
+          Tourist Police: 1155<br>
+          Ambulance: 1669</p>
+        </div>
+        <div class="reference-card">
+          <h3>Important Note</h3>
+          <p>All information current as of October 2025. Always verify with official sources before making decisions.</p>
+        </div>
+      </div>
+    </section>
+  </div>
+</div><footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-section">
+      <h4>About This Guide</h4>
+      <p>A comprehensive resource for planning a long-term stay in Thailand using the Digital Nomad Visa (DTV) with medical treatment justification.</p>
+    </div>
+    <div class="footer-section">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="/carolyn-2/timeline">Full Timeline</a></li>
+        <li><a href="/carolyn-2/faq">FAQ</a></li>
+        <li><a href="/carolyn-2/budget-planning">Budget Planning</a></li>
+        <li><a href="/carolyn-2/resources-tools">Resources & Tools</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Important Notes</h4>
+      <p>This guide reflects current visa requirements and costs as of 2025. Always verify information with official embassy websites before making decisions.</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 Thailand Visa Planning Guide. Information is for educational purposes only.</p>
+  </div>
+</footer></body></html>
