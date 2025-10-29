@@ -1,0 +1,410 @@
+<!DOCTYPE html><html lang='en'><head><meta charset='UTF-8'><meta name='viewport' content='width=device-width, initial-scale=1.0'><title>Phase 1: Pre-Departure Preparation (7-8 Weeks)</title><style>/* Global CSS
+
+/* Phase 1: Pre-Departure Preparation (7-8 Weeks) - Page CSS */
+.phase-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.phase-header {
+  margin-bottom: 3rem;
+  border-bottom: 3px solid #2c3e50;
+  padding-bottom: 2rem;
+}
+
+.phase-header h1 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin: 0 0 0.5rem 0;
+  line-height: 1.2;
+}
+
+.phase-timeline {
+  font-size: 1.1rem;
+  color: #7f8c8d;
+  font-weight: 600;
+  margin: 0.5rem 0 1rem 0;
+}
+
+.phase-intro {
+  font-size: 1rem;
+  color: #34495e;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.phase-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.task-section {
+  background: #f8f9fa;
+  border-left: 4px solid #3498db;
+  padding: 1.5rem;
+  border-radius: 4px;
+}
+
+.task-section h2 {
+  font-size: 1.4rem;
+  color: #2c3e50;
+  margin: 0 0 1rem 0;
+}
+
+.task-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.task-list li {
+  padding: 0.75rem 0;
+  color: #34495e;
+  font-size: 1rem;
+  line-height: 1.5;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+.task-list input[type="checkbox"] {
+  margin-top: 0.25rem;
+  cursor: pointer;
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
+
+.task-note {
+  background: #ecf0f1;
+  border-left: 3px solid #e74c3c;
+  padding: 1rem;
+  margin-top: 1rem;
+  border-radius: 3px;
+  font-size: 0.95rem;
+  color: #2c3e50;
+  line-height: 1.6;
+}
+
+.task-note strong {
+  color: #e74c3c;
+}
+
+.key-info {
+  background: #e8f4f8;
+  border-left-color: #27ae60;
+}
+
+.key-info h2 {
+  color: #27ae60;
+}
+
+.info-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.info-list li {
+  padding: 0.75rem 0;
+  color: #2c3e50;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  border-bottom: 1px solid #d5e8ed;
+}
+
+.info-list li:last-child {
+  border-bottom: none;
+}
+
+.info-list strong {
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+.phase-navigation {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 2px solid #ecf0f1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btn-next {
+  background: #3498db;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+  display: inline-block;
+}
+
+.btn-next:hover {
+  background: #2980b9;
+}
+
+@media (max-width: 768px) {
+  .phase-container {
+    padding: 1rem;
+  }
+
+  .phase-header h1 {
+    font-size: 1.75rem;
+  }
+
+  .task-section {
+    padding: 1rem;
+  }
+
+  .task-section h2 {
+    font-size: 1.2rem;
+  }
+}.phase-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.phase-header {
+  margin-bottom: 3rem;
+  border-bottom: 3px solid #2c3e50;
+  padding-bottom: 2rem;
+}
+
+.phase-header h1 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin: 0 0 0.5rem 0;
+  line-height: 1.2;
+}
+
+.phase-timeline {
+  font-size: 1.1rem;
+  color: #7f8c8d;
+  font-weight: 600;
+  margin: 0.5rem 0 1rem 0;
+}
+
+.phase-intro {
+  font-size: 1rem;
+  color: #34495e;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.phase-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.task-section {
+  background: #f8f9fa;
+  border-left: 4px solid #3498db;
+  padding: 1.5rem;
+  border-radius: 4px;
+}
+
+.task-section h2 {
+  font-size: 1.4rem;
+  color: #2c3e50;
+  margin: 0 0 1rem 0;
+}
+
+.task-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.task-list li {
+  padding: 0.75rem 0;
+  color: #34495e;
+  font-size: 1rem;
+  line-height: 1.5;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+.task-list input[type="checkbox"] {
+  margin-top: 0.25rem;
+  cursor: pointer;
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
+
+.task-note {
+  background: #ecf0f1;
+  border-left: 3px solid #e74c3c;
+  padding: 1rem;
+  margin-top: 1rem;
+  border-radius: 3px;
+  font-size: 0.95rem;
+  color: #2c3e50;
+  line-height: 1.6;
+}
+
+.task-note strong {
+  color: #e74c3c;
+}
+
+.key-info {
+  background: #e8f4f8;
+  border-left-color: #27ae60;
+}
+
+.key-info h2 {
+  color: #27ae60;
+}
+
+.info-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.info-list li {
+  padding: 0.75rem 0;
+  color: #2c3e50;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  border-bottom: 1px solid #d5e8ed;
+}
+
+.info-list li:last-child {
+  border-bottom: none;
+}
+
+.info-list strong {
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+.phase-navigation {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 2px solid #ecf0f1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btn-next {
+  background: #3498db;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+  display: inline-block;
+}
+
+.btn-next:hover {
+  background: #2980b9;
+}
+
+@media (max-width: 768px) {
+  .phase-container {
+    padding: 1rem;
+  }
+
+  .phase-header h1 {
+    font-size: 1.75rem;
+  }
+
+  .task-section {
+    padding: 1rem;
+  }
+
+  .task-section h2 {
+    font-size: 1.2rem;
+  }
+}</style></head><body><div class="phase-container">
+  <div class="phase-header">
+    <h1>Phase 1: Pre-Departure Preparation</h1>
+    <p class="phase-timeline">7-8 Weeks Before Departure</p>
+    <p class="phase-intro">Essential tasks before leaving the US including travel planning, document gathering, medical records, possessions management, and community research.</p>
+  </div>
+
+  <div class="phase-content">
+    <section class="task-section">
+      <h2>Essential Travel Planning</h2>
+      <ul class="task-list">
+        <li><input type="checkbox" disabled> Buy flight</li>
+        <li><input type="checkbox" disabled> Book temporary accommodation for first 2 weeks</li>
+        <li><input type="checkbox" disabled> Arrange travel health insurance</li>
+      </ul>
+    </section>
+
+    <section class="task-section">
+      <h2>Get Rid of Things</h2>
+      <ul class="task-list">
+        <li><input type="checkbox" disabled> Sell/donate/pack possessions</li>
+        <li><input type="checkbox" disabled> Sell/store car</li>
+      </ul>
+    </section>
+
+    <section class="task-section">
+      <h2>Gather Documents</h2>
+      <ul class="task-list">
+        <li><input type="checkbox" disabled> US medical records (surgeries, MRI, X-rays, etc.)</li>
+        <li><input type="checkbox" disabled> Passport</li>
+        <li><input type="checkbox" disabled> Emergency contact list (doctor, hospital, Jon, US family)</li>
+      </ul>
+      <div class="task-note">
+        <strong>Note:</strong> Medical records are essential for DTV application later. This is your last chance to get proper documentation from US doctors.
+      </div>
+    </section>
+
+    <section class="task-section">
+      <h2>Research & Planning</h2>
+      <ul class="task-list">
+        <li><input type="checkbox" disabled> Join Chiang Mai Expats Facebook groups</li>
+        <li><input type="checkbox" disabled> Understand specific responsibilities of a Financial Sponsor</li>
+        <li><input type="checkbox" disabled> Research prescription medication availability in Thailand</li>
+        <li><input type="checkbox" disabled> Create Thailand budget based on actual costs vs US disability income</li>
+        <li><input type="checkbox" disabled> Identify 24/7 English-speaking medical facilities</li>
+        <li><input type="checkbox" disabled> Plan for burning season (potential southern Thailand/Bali trip during worst air quality months)</li>
+      </ul>
+    </section>
+
+    <section class="task-section">
+      <h2>Locate Nearby Amenities in Suthep Area</h2>
+      <ul class="task-list">
+        <li><input type="checkbox" disabled> Convenience store</li>
+        <li><input type="checkbox" disabled> Grocery store</li>
+        <li><input type="checkbox" disabled> Restaurants</li>
+        <li><input type="checkbox" disabled> AA Meetings</li>
+        <li><input type="checkbox" disabled> Counseling centers, Art Therapy, etc.</li>
+        <li><input type="checkbox" disabled> Gym and swimming pool</li>
+        <li><input type="checkbox" disabled> Physical Therapist</li>
+        <li><input type="checkbox" disabled> Hospital</li>
+      </ul>
+      <div class="task-note">
+        <strong>Info:</strong> Suthep area has a large expat community with English-speaking services. Many US medications are available in Thailand at a fraction of US cost.
+      </div>
+    </section>
+
+    <section class="task-section key-info">
+      <h2>Key Information</h2>
+      <ul class="info-list">
+        <li><strong>Visa:</strong> US citizens do NOT need to apply for a visa - you'll receive a 60-day visa exemption automatically upon arrival</li>
+        <li><strong>Medical Records:</strong> Essential for DTV later - bring originals and copies</li>
+        <li><strong>Medications:</strong> Many US medications available in Thailand at fraction of cost</li>
+        <li><strong>Suthep Area:</strong> Large expat community with English-speaking services available</li>
+      </ul>
+    </section>
+
+    <div class="phase-navigation">
+      <a href="/carolyn-2/phase-1-pre-departure/final-checks" class="btn-next">Next: Final Packing & Medical Checks →</a>
+    </div>
+  </div>
+</div></body></html>
