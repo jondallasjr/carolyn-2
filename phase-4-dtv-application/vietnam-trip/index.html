@@ -1,0 +1,980 @@
+<!DOCTYPE html><html lang='en'><head><meta charset='UTF-8'><meta name='viewport' content='width=device-width, initial-scale=1.0'><title>Vietnam Trip for DTV Application</title><style>/* Global CSS
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: #fafbfc;
+}
+
+a {
+  color: #2c5aa0;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* HEADER STYLES */
+.site-header {
+  background: linear-gradient(135deg, #1a3a5c 0%, #2c5aa0 100%);
+  color: white;
+  padding: 40px 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.site-title {
+  margin: 0 0 8px 0;
+  font-size: 2.2em;
+  font-weight: 700;
+}
+
+.site-tagline {
+  margin: 0;
+  font-size: 1.1em;
+  opacity: 0.95;
+  font-weight: 300;
+}
+
+/* NAVIGATION STYLES */
+.site-nav {
+  background: white;
+  border-bottom: 2px solid #e0e8f0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.nav-link {
+  display: inline-block;
+  padding: 15px 16px;
+  color: #555;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95em;
+  transition: all 0.3s ease;
+  border-bottom: 3px solid transparent;
+}
+
+.nav-link:hover {
+  color: #2c5aa0;
+  border-bottom-color: #2c5aa0;
+}
+
+.nav-link.active {
+  color: #2c5aa0;
+  border-bottom-color: #2c5aa0;
+}
+
+/* FOOTER STYLES */
+.site-footer {
+  background: #1a3a5c;
+  color: #fff;
+  padding: 50px 20px 20px;
+  margin-top: 60px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  margin-bottom: 30px;
+}
+
+.footer-section h4 {
+  margin: 0 0 15px 0;
+  font-size: 1.1em;
+  font-weight: 600;
+}
+
+.footer-section p {
+  margin: 0 0 10px 0;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section li {
+  margin-bottom: 8px;
+}
+
+.footer-section a {
+  color: #a8c5e0;
+  transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: center;
+  opacity: 0.8;
+  font-size: 0.9em;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .site-header {
+    padding: 30px 15px;
+  }
+
+  .site-title {
+    font-size: 1.8em;
+  }
+
+  .site-tagline {
+    font-size: 1em;
+  }
+
+  .nav-container {
+    gap: 0;
+  }
+
+  .nav-link {
+    padding: 12px 12px;
+    font-size: 0.9em;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
+/* Phase 4: DTV Visa Application - Page CSS */
+
+
+/* Vietnam Trip for DTV Application - Page CSS */
+.page-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.breadcrumb {
+  font-size: 0.9em;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.breadcrumb a {
+  color: #2c5aa0;
+}
+
+.breadcrumb span {
+  color: #333;
+  font-weight: 600;
+}
+
+article.page-content h1 {
+  font-size: 2.2em;
+  color: #1a3a5c;
+  margin: 0 0 10px 0;
+  font-weight: 700;
+}
+
+.intro-text {
+  font-size: 1.1em;
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 30px;
+  font-style: italic;
+}
+
+.section {
+  margin-bottom: 50px;
+}
+
+.section h2 {
+  font-size: 1.6em;
+  color: #1a3a5c;
+  margin: 30px 0 20px 0;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #e0e8f0;
+}
+
+.section h3 {
+  font-size: 1.2em;
+  color: #2c5aa0;
+  margin: 20px 0 12px 0;
+}
+
+.section ul, .section ol {
+  margin: 15px 0;
+  padding-left: 25px;
+  line-height: 1.8;
+}
+
+.section li {
+  margin-bottom: 10px;
+  color: #444;
+}
+
+.section strong {
+  color: #1a3a5c;
+}
+
+.info-box, .warning-box, .success-box {
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 6px;
+  border-left: 4px solid #2c5aa0;
+}
+
+.info-box {
+  background: #f0f5fb;
+  border-left-color: #2c5aa0;
+}
+
+.warning-box {
+  background: #fef3f0;
+  border-left-color: #e07856;
+}
+
+.warning-box h3 {
+  color: #d84315;
+  margin-top: 0;
+}
+
+.success-box {
+  background: #f0f9f5;
+  border-left-color: #4caf50;
+}
+
+.success-box h3 {
+  color: #2e7d32;
+  margin-top: 0;
+}
+
+.timeline-box {
+  background: #f5f8fb;
+  border-radius: 6px;
+  padding: 25px;
+  margin: 20px 0;
+}
+
+.timeline-item {
+  padding: 15px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.timeline-item:last-child {
+  border-bottom: none;
+}
+
+.timeline-item strong {
+  color: #2c5aa0;
+  font-size: 1em;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.timeline-item p {
+  margin: 0;
+  color: #555;
+}
+
+.comparison-box {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.comparison-item {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 6px;
+  border: 1px solid #e0e8f0;
+}
+
+.comparison-item h3 {
+  margin-top: 0;
+  color: #1a3a5c;
+}
+
+.comparison-item ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.comparison-item li {
+  margin-bottom: 8px;
+  font-size: 0.95em;
+}
+
+.budget-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  background: white;
+  border: 1px solid #e0e8f0;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.budget-table tr {
+  border-bottom: 1px solid #e0e8f0;
+}
+
+.budget-table tr:last-child {
+  border-bottom: none;
+}
+
+.budget-table td {
+  padding: 15px 20px;
+}
+
+.budget-table tr:nth-child(even) {
+  background: #f9f9f9;
+}
+
+.budget-table .budget-total {
+  background: #f0f5fb;
+  font-weight: 600;
+  color: #1a3a5c;
+}
+
+.related-pages {
+  background: #f5f8fb;
+  padding: 30px;
+  border-radius: 6px;
+  margin-top: 50px;
+}
+
+.related-pages h2 {
+  border-bottom-color: #2c5aa0;
+  margin-top: 0;
+}
+
+.related-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.related-links li {
+  margin: 12px 0;
+}
+
+.related-links a {
+  color: #2c5aa0;
+  font-weight: 500;
+  display: inline-block;
+}
+
+.related-links a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .page-container {
+    padding: 25px 15px;
+  }
+
+  article.page-content h1 {
+    font-size: 1.8em;
+  }
+
+  .section h2 {
+    font-size: 1.3em;
+  }
+
+  .section h3 {
+    font-size: 1.1em;
+  }
+
+  .comparison-box {
+    grid-template-columns: 1fr;
+  }
+
+  .budget-table td {
+    padding: 12px 15px;
+    font-size: 0.95em;
+  }
+
+  .related-pages {
+    padding: 20px;
+  }
+}
+.page-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.breadcrumb {
+  font-size: 0.9em;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.breadcrumb a {
+  color: #2c5aa0;
+}
+
+.breadcrumb span {
+  color: #333;
+  font-weight: 600;
+}
+
+article.page-content h1 {
+  font-size: 2.2em;
+  color: #1a3a5c;
+  margin: 0 0 10px 0;
+  font-weight: 700;
+}
+
+.intro-text {
+  font-size: 1.1em;
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 30px;
+  font-style: italic;
+}
+
+.section {
+  margin-bottom: 50px;
+}
+
+.section h2 {
+  font-size: 1.6em;
+  color: #1a3a5c;
+  margin: 30px 0 20px 0;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #e0e8f0;
+}
+
+.section h3 {
+  font-size: 1.2em;
+  color: #2c5aa0;
+  margin: 20px 0 12px 0;
+}
+
+.section ul, .section ol {
+  margin: 15px 0;
+  padding-left: 25px;
+  line-height: 1.8;
+}
+
+.section li {
+  margin-bottom: 10px;
+  color: #444;
+}
+
+.section strong {
+  color: #1a3a5c;
+}
+
+.info-box, .warning-box, .success-box {
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 6px;
+  border-left: 4px solid #2c5aa0;
+}
+
+.info-box {
+  background: #f0f5fb;
+  border-left-color: #2c5aa0;
+}
+
+.warning-box {
+  background: #fef3f0;
+  border-left-color: #e07856;
+}
+
+.warning-box h3 {
+  color: #d84315;
+  margin-top: 0;
+}
+
+.success-box {
+  background: #f0f9f5;
+  border-left-color: #4caf50;
+}
+
+.success-box h3 {
+  color: #2e7d32;
+  margin-top: 0;
+}
+
+.timeline-box {
+  background: #f5f8fb;
+  border-radius: 6px;
+  padding: 25px;
+  margin: 20px 0;
+}
+
+.timeline-item {
+  padding: 15px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.timeline-item:last-child {
+  border-bottom: none;
+}
+
+.timeline-item strong {
+  color: #2c5aa0;
+  font-size: 1em;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.timeline-item p {
+  margin: 0;
+  color: #555;
+}
+
+.comparison-box {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.comparison-item {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 6px;
+  border: 1px solid #e0e8f0;
+}
+
+.comparison-item h3 {
+  margin-top: 0;
+  color: #1a3a5c;
+}
+
+.comparison-item ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.comparison-item li {
+  margin-bottom: 8px;
+  font-size: 0.95em;
+}
+
+.budget-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  background: white;
+  border: 1px solid #e0e8f0;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.budget-table tr {
+  border-bottom: 1px solid #e0e8f0;
+}
+
+.budget-table tr:last-child {
+  border-bottom: none;
+}
+
+.budget-table td {
+  padding: 15px 20px;
+}
+
+.budget-table tr:nth-child(even) {
+  background: #f9f9f9;
+}
+
+.budget-table .budget-total {
+  background: #f0f5fb;
+  font-weight: 600;
+  color: #1a3a5c;
+}
+
+.related-pages {
+  background: #f5f8fb;
+  padding: 30px;
+  border-radius: 6px;
+  margin-top: 50px;
+}
+
+.related-pages h2 {
+  border-bottom-color: #2c5aa0;
+  margin-top: 0;
+}
+
+.related-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.related-links li {
+  margin: 12px 0;
+}
+
+.related-links a {
+  color: #2c5aa0;
+  font-weight: 500;
+  display: inline-block;
+}
+
+.related-links a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .page-container {
+    padding: 25px 15px;
+  }
+
+  article.page-content h1 {
+    font-size: 1.8em;
+  }
+
+  .section h2 {
+    font-size: 1.3em;
+  }
+
+  .section h3 {
+    font-size: 1.1em;
+  }
+
+  .comparison-box {
+    grid-template-columns: 1fr;
+  }
+
+  .budget-table td {
+    padding: 12px 15px;
+    font-size: 0.95em;
+  }
+
+  .related-pages {
+    padding: 20px;
+  }
+}
+</style></head><body><header class="site-header">
+  <div class="header-container">
+    <h1 class="site-title">Carolyn's Thailand Journey</h1>
+    <p class="site-tagline">Long-Term Visa Planning & Settlement Guide</p>
+  </div>
+</header><nav class="site-nav">
+  <div class="nav-container">
+    <a href="/carolyn-2/" class="nav-link">Home</a>
+    <a href="/carolyn-2/phase-1-pre-departure" class="nav-link">Phase 1: Pre-Departure</a>
+    <a href="/carolyn-2/phase-2-arrival-settling" class="nav-link active">Phase 2: Arrival & Settling</a>
+    <a href="/carolyn-2/phase-3-medical-plan" class="nav-link">Phase 3: Medical Plan</a>
+    <a href="/carolyn-2/phase-4-dtv-application" class="nav-link">Phase 4: DTV Application</a>
+    <a href="/carolyn-2/phase-5-long-term-settlement" class="nav-link">Phase 5: Long-Term</a>
+    <a href="/carolyn-2/timeline" class="nav-link">Timeline</a>
+    <a href="/carolyn-2/resources-tools" class="nav-link">Resources</a>
+  </div>
+</nav><main class="page-container">
+  <div class="breadcrumb">
+    <a href="/carolyn-2/">Home</a> / <a href="/carolyn-2/phase-4-dtv-application">Phase 4: DTV Application</a> / <span>Vietnam Trip</span>
+  </div>
+
+  <article class="page-content">
+    <h1>Vietnam Trip for DTV Application</h1>
+    <p class="intro-text">A critical step in the DTV visa process: traveling to Vietnam to apply at the Thai embassy. This guide covers everything you need to know about your stay in Vietnam during the application processing period.</p>
+
+    <section class="section">
+      <h2>Why Vietnam?</h2>
+      <p>You cannot apply for the DTV visa from inside Thailand. You must apply from outside the country at a Thai embassy or consulate. Vietnam offers several advantages:</p>
+      <ul>
+        <li><strong>Proximity:</strong> Short flight from Chiang Mai to Hanoi or Ho Chi Minh City</li>
+        <li><strong>High approval rates:</strong> Thai embassies in Vietnam have excellent DTV approval records</li>
+        <li><strong>Processing speed:</strong> Official timeline is 5 working days; realistic average is 2-14 days</li>
+        <li><strong>Affordability:</strong> Budget accommodation available at $30-40/night</li>
+        <li><strong>Tourist-friendly:</strong> Easy to arrange visa and accommodation as a US citizen</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>Vietnam Visa Requirements</h2>
+      <div class="info-box">
+        <h3>US Citizens Entering Vietnam</h3>
+        <p>US citizens require a tourist visa to enter Vietnam. Unlike Thailand, there is no visa exemption.</p>
+        <ul>
+          <li><strong>Visa type:</strong> Vietnam Tourist Visa (E-visa or stamped)</li>
+          <li><strong>Cost:</strong> $25 (E-visa online) or $30-50 (stamped at embassy)</li>
+          <li><strong>Processing:</strong> E-visa takes 2-3 business days</li>
+          <li><strong>Validity:</strong> Single-entry, typically 30 days</li>
+        </ul>
+      </div>
+      <p><strong>Recommendation:</strong> Apply for the E-visa online before traveling. It's cheaper, faster, and eliminates the need to visit an embassy before your trip.</p>
+    </section>
+
+    <section class="section">
+      <h2>Travel Timeline</h2>
+      <div class="timeline-box">
+        <div class="timeline-item">
+          <strong>October 20 - November 10:</strong>
+          <p>Prepare DTV application documents in Thailand (see <a href="/carolyn-2/phase-4-dtv-application/document-checklist">Document Checklist</a>)</p>
+        </div>
+        <div class="timeline-item">
+          <strong>November 10-11:</strong>
+          <p>Travel from Chiang Mai to Vietnam (Hanoi or Ho Chi Minh City) with your financial sponsor (Jon)</p>
+        </div>
+        <div class="timeline-item">
+          <strong>November 12:</strong>
+          <p>Arrive in Vietnam; apply for DTV at Thai embassy (submit online or in-person)</p>
+        </div>
+        <div class="timeline-item">
+          <strong>November 12-19:</strong>
+          <p>Wait for DTV approval while in Vietnam (cannot return to Thailand during processing)</p>
+        </div>
+        <div class="timeline-item">
+          <strong>November 19:</strong>
+          <p>Receive DTV approval; fly back to Chiang Mai</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Choosing Your Destination</h2>
+      <div class="comparison-box">
+        <div class="comparison-item">
+          <h3>Hanoi</h3>
+          <ul>
+            <li>Thai Embassy known for fast DTV processing</li>
+            <li>More chaotic but vibrant atmosphere</li>
+            <li>Good food scene and historic sites</li>
+            <li>Frequent flights to/from Chiang Mai</li>
+          </ul>
+        </div>
+        <div class="comparison-item">
+          <h3>Ho Chi Minh City</h3>
+          <ul>
+            <li>Thai Consulate with strong DTV track record</li>
+            <li>More modern, easier to navigate</li>
+            <li>Larger expat community</li>
+            <li>Better infrastructure and English speakers</li>
+          </ul>
+        </div>
+      </div>
+      <p><strong>Either location works well.</strong> Choose based on flight prices, personal preference, or travel companion's preference (Jon may have input).</p>
+    </section>
+
+    <section class="section">
+      <h2>Accommodation in Vietnam</h2>
+      <div class="info-box">
+        <h3>Budget & Booking</h3>
+        <ul>
+          <li><strong>Daily rate:</strong> $30-40/night for clean, safe accommodation</li>
+          <li><strong>Total stay:</strong> 7-10 nights typical</li>
+          <li><strong>Budget:</strong> $210-400 for accommodation alone</li>
+          <li><strong>Where to stay:</strong> Central location near embassy and restaurants</li>
+        </ul>
+      </div>
+      <p><strong>Booking platforms:</strong></p>
+      <ul>
+        <li>Agoda (has Vietnam properties; Thai payment methods accepted)</li>
+        <li>Booking.com</li>
+        <li>Airbnb</li>
+        <li>Local hotels (often cheaper when booking direct)</li>
+      </ul>
+      <p><strong>Pro tip:</strong> Book a "business hotel" or "boutique hotel" rather than hostels. They're affordable, have private rooms, and quiet environments—better for resting between embassy visits.</p>
+    </section>
+
+    <section class="section">
+      <h2>Total Vietnam Trip Budget</h2>
+      <table class="budget-table">
+        <tr>
+          <td><strong>Flights (Chiang Mai ↔ Vietnam):</strong></td>
+          <td>$150-250 (round-trip)</td>
+        </tr>
+        <tr>
+          <td><strong>Vietnam visa (E-visa):</strong></td>
+          <td>$25</td>
+        </tr>
+        <tr>
+          <td><strong>Accommodation (7-10 nights):</strong></td>
+          <td>$210-400</td>
+        </tr>
+        <tr>
+          <td><strong>Food & transportation:</strong></td>
+          <td>$100-150</td>
+        </tr>
+        <tr class="budget-total">
+          <td><strong>TOTAL BUDGET:</strong></td>
+          <td><strong>$485-825</strong></td>
+        </tr>
+      </table>
+      <p><em>Note: This does not include the $340 DTV application fee (paid in Thailand before traveling)</em></p>
+    </section>
+
+    <section class="section">
+      <h2>During Your Stay: What to Expect</h2>
+      <h3>Day 1 (Arrival)</h3>
+      <ul>
+        <li>Arrive in Vietnam and clear immigration</li>
+        <li>Get SIM card for phone/data (optional but helpful)</li>
+        <li>Check into accommodation</li>
+        <li>Rest and adjust to new timezone</li>
+      </ul>
+
+      <h3>Day 2 (DTV Application)</h3>
+      <ul>
+        <li><strong>Thai Embassy visit:</strong> Submit DTV application with complete document package</li>
+        <li>Application is now being processed (official timeline: 5 working days)</li>
+        <li>Embassy may request additional documents via email</li>
+        <li>Check email regularly and be prepared to respond quickly</li>
+      </ul>
+
+      <h3>Days 3-7+ (Waiting Period)</h3>
+      <ul>
+        <li>Cannot return to Thailand during processing</li>
+        <li>Explore Vietnam, rest, and relax</li>
+        <li>Stay accessible by email/phone in case embassy contacts you</li>
+        <li>Processing times vary: could be 2 days, could be 2 weeks</li>
+        <li>Approval arrives via email with digital approval letter</li>
+      </ul>
+
+      <h3>Approval Day</h3>
+      <ul>
+        <li>Receive approval email with DTV visa number/approval</li>
+        <li>Print multiple copies of approval letter (3-5 copies)</li>
+        <li>Book return flight to Chiang Mai</li>
+        <li>Prepare for border entry with printed approval</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>Critical Rules During Processing</h2>
+      <div class="warning-box">
+        <h3>⚠️ Important Restrictions</h3>
+        <ul>
+          <li><strong>Cannot leave Vietnam:</strong> Do not travel to other countries while your application is processing</li>
+          <li><strong>Cannot return to Thailand:</strong> Returning will invalidate your application and require resubmission</li>
+          <li><strong>Must stay accessible:</strong> Keep email and phone monitored for embassy communications</li>
+          <li><strong>Have all documents ready:</strong> Embassy may request additional paperwork. Be prepared to provide it within 24-48 hours</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>What If Processing Takes Longer Than Expected?</h2>
+      <p>The official processing time is 5 working days, but realistic times vary:</p>
+      <ul>
+        <li><strong>Best case:</strong> 2-3 days approval</li>
+        <li><strong>Typical case:</strong> 5-7 days</li>
+        <li><strong>Worst case:</strong> 1-2 weeks (usually due to missing documents or embassy requesting clarification)</li>
+      </ul>
+      <p><strong>Contingency planning:</strong></p>
+      <ul>
+        <li>Budget for up to 10 days in Vietnam (not just 7)</li>
+        <li>Extend your hotel booking if needed (usually available)</li>
+        <li>Consider your visa exemption clock: Your original 60-day Thai visa exemption continues counting down, but the DTV will override it once approved</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>When Approval Arrives</h2>
+      <div class="success-box">
+        <h3>Next Steps</h3>
+        <ol>
+          <li><strong>Check email:</strong> Official approval will come from Thai embassy with approval number</li>
+          <li><strong>Print copies:</strong> Print 3-5 copies of approval letter or digital approval</li>
+          <li><strong>Return to Thailand:</strong> Book flight back to Chiang Mai</li>
+          <li><strong>At border:</strong> Present printed approval to Thai immigration</li>
+          <li><strong>Entry:</strong> You'll receive a 180-day DTV stamp and can stay continuously for 5+ years</li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Practical Travel Tips</h2>
+      <ul>
+        <li><strong>Pack important documents:</strong> Keep passport, document copies, and insurance in carry-on</li>
+        <li><strong>Cash vs. Card:</strong> Vietnam accepts both; have some local currency (Vietnamese Dong) for small purchases</li>
+        <li><strong>Travel insurance:</strong> Ensure your policy covers Vietnam and any medical needs</li>
+        <li><strong>Communication:</strong> Get a local SIM card for data and messaging</li>
+        <li><strong>Transportation:</strong> Use Grab app (same as Thailand) for taxis and motorbikes</li>
+        <li><strong>Language:</strong> Limited English in Vietnam; download translation app or learn basic phrases</li>
+        <li><strong>Health precautions:</strong> Drink bottled water, be cautious with street food if you have dietary restrictions</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>Next Steps</h2>
+      <p>Before traveling to Vietnam:</p>
+      <ul>
+        <li>✓ Complete <a href="/carolyn-2/phase-4-dtv-application/document-checklist">DTV Document Checklist</a></li>
+        <li>✓ Ensure financial sponsor (Jon) is prepared with required documents and commitment</li>
+        <li>✓ Apply for Vietnam E-visa (do this 2-3 weeks before travel)</li>
+        <li>✓ Book accommodation in Vietnam</li>
+        <li>✓ Book flights from Chiang Mai to Hanoi or Ho Chi Minh City</li>
+        <li>✓ Coordinate with Jon for travel dates</li>
+      </ul>
+    </section>
+
+    <section class="section related-pages">
+      <h2>Related Pages</h2>
+      <ul class="related-links">
+        <li><a href="/carolyn-2/phase-4-dtv-application">← Back to Phase 4: DTV Application</a></li>
+        <li><a href="/carolyn-2/phase-4-dtv-application/document-checklist">Document Checklist for DTV Application</a></li>
+        <li><a href="/carolyn-2/timeline">Full Timeline Overview</a></li>
+      </ul>
+    </section>
+  </article>
+</main><footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-section">
+      <h4>About This Guide</h4>
+      <p>A comprehensive resource for planning a long-term stay in Thailand using the Digital Nomad Visa (DTV) with medical treatment justification.</p>
+    </div>
+    <div class="footer-section">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="/carolyn-2/timeline">Full Timeline</a></li>
+        <li><a href="/carolyn-2/faq">FAQ</a></li>
+        <li><a href="/carolyn-2/budget-planning">Budget Planning</a></li>
+        <li><a href="/carolyn-2/resources-tools">Resources & Tools</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Important Notes</h4>
+      <p>This guide reflects current visa requirements and costs as of 2025. Always verify information with official embassy websites before making decisions.</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 Thailand Visa Planning Guide. Information is for educational purposes only.</p>
+  </div>
+</footer></body></html>
