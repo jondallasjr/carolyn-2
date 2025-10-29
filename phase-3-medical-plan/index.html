@@ -1,0 +1,1142 @@
+<!DOCTYPE html><html lang='en'><head><meta charset='UTF-8'><meta name='viewport' content='width=device-width, initial-scale=1.0'><title>Phase 3: Getting a Medical Plan (Required for DTV)</title><style>/* Global CSS
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: #fafbfc;
+}
+
+a {
+  color: #2c5aa0;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* HEADER STYLES */
+.site-header {
+  background: linear-gradient(135deg, #1a3a5c 0%, #2c5aa0 100%);
+  color: white;
+  padding: 40px 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.site-title {
+  margin: 0 0 8px 0;
+  font-size: 2.2em;
+  font-weight: 700;
+}
+
+.site-tagline {
+  margin: 0;
+  font-size: 1.1em;
+  opacity: 0.95;
+  font-weight: 300;
+}
+
+/* NAVIGATION STYLES */
+.site-nav {
+  background: white;
+  border-bottom: 2px solid #e0e8f0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.nav-link {
+  display: inline-block;
+  padding: 15px 16px;
+  color: #555;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95em;
+  transition: all 0.3s ease;
+  border-bottom: 3px solid transparent;
+}
+
+.nav-link:hover {
+  color: #2c5aa0;
+  border-bottom-color: #2c5aa0;
+}
+
+.nav-link.active {
+  color: #2c5aa0;
+  border-bottom-color: #2c5aa0;
+}
+
+/* FOOTER STYLES */
+.site-footer {
+  background: #1a3a5c;
+  color: #fff;
+  padding: 50px 20px 20px;
+  margin-top: 60px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  margin-bottom: 30px;
+}
+
+.footer-section h4 {
+  margin: 0 0 15px 0;
+  font-size: 1.1em;
+  font-weight: 600;
+}
+
+.footer-section p {
+  margin: 0 0 10px 0;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section li {
+  margin-bottom: 8px;
+}
+
+.footer-section a {
+  color: #a8c5e0;
+  transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: center;
+  opacity: 0.8;
+  font-size: 0.9em;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .site-header {
+    padding: 30px 15px;
+  }
+
+  .site-title {
+    font-size: 1.8em;
+  }
+
+  .site-tagline {
+    font-size: 1em;
+  }
+
+  .nav-container {
+    gap: 0;
+  }
+
+  .nav-link {
+    padding: 12px 12px;
+    font-size: 0.9em;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
+/* Phase 3: Getting a Medical Plan (Required for DTV) - Page CSS */
+.phase-page {
+  min-height: calc(100vh - 300px);
+}
+
+.page-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.page-header {
+  margin-bottom: 50px;
+  border-bottom: 3px solid #2c5aa0;
+  padding-bottom: 30px;
+}
+
+.page-header h1 {
+  margin: 0 0 10px 0;
+  font-size: 2.5em;
+  color: #1a3a5c;
+  font-weight: 700;
+}
+
+.phase-subtitle {
+  margin: 0 0 15px 0;
+  font-size: 1.2em;
+  color: #666;
+  font-weight: 500;
+}
+
+.phase-meta {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+
+.phase-dates,
+.phase-duration {
+  font-size: 0.95em;
+  color: #555;
+  padding: 5px 0;
+}
+
+.phase-dates::before {
+  content: "📅 ";
+  margin-right: 5px;
+}
+
+.phase-duration::before {
+  content: "⏱️ ";
+  margin-right: 5px;
+}
+
+.phase-content {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+section h2 {
+  font-size: 1.8em;
+  color: #1a3a5c;
+  margin: 0 0 20px 0;
+  font-weight: 600;
+  border-left: 4px solid #2c5aa0;
+  padding-left: 15px;
+}
+
+.intro-section {
+  background: linear-gradient(135deg, #e3f2fd 0%, #f3e5f5 100%);
+  padding: 25px;
+  border-radius: 8px;
+  border-left: 4px solid #2c5aa0;
+}
+
+.intro-section p {
+  margin: 0;
+  font-size: 1.05em;
+  line-height: 1.7;
+  color: #333;
+}
+
+.timeline-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.timeline-item {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  border-left: 4px solid #2c5aa0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.timeline-marker {
+  min-width: 100px;
+  font-weight: 600;
+  color: #2c5aa0;
+  font-size: 0.95em;
+}
+
+.timeline-content h3 {
+  margin: 0 0 8px 0;
+  font-size: 1.15em;
+  color: #1a3a5c;
+}
+
+.timeline-content p {
+  margin: 0;
+  color: #555;
+  line-height: 1.6;
+}
+
+.action-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.action-card {
+  background: white;
+  border-radius: 8px;
+  padding: 25px;
+  border-left: 4px solid #2c5aa0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.action-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  transform: translateY(-2px);
+}
+
+.action-card h3 {
+  margin: 0 0 15px 0;
+  font-size: 1.2em;
+  color: #1a3a5c;
+  font-weight: 600;
+}
+
+.action-details {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.action-details p {
+  margin: 0;
+  color: #555;
+  line-height: 1.6;
+}
+
+.action-details ul {
+  margin: 10px 0 0 0;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.action-details li {
+  color: #555;
+  line-height: 1.6;
+}
+
+.cost-breakdown {
+  background: linear-gradient(135deg, #fff9e6 0%, #fff3e0 100%);
+  border-radius: 8px;
+  padding: 30px;
+  border-left: 4px solid #ff9800;
+}
+
+.cost-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.cost-label {
+  color: #555;
+  font-weight: 500;
+}
+
+.cost-value {
+  color: #1a3a5c;
+  font-weight: 600;
+}
+
+.cost-total {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0 0 0;
+  margin-top: 10px;
+  border-top: 2px solid rgba(0, 0, 0, 0.1);
+  font-size: 1.1em;
+}
+
+.cost-note {
+  margin: 15px 0 0 0;
+  font-size: 0.95em;
+  color: #666;
+  font-style: italic;
+  padding-top: 15px;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.important-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.important-item {
+  background: linear-gradient(135deg, #ffebee 0%, #fce4ec 100%);
+  border-radius: 8px;
+  padding: 20px;
+  border-left: 4px solid #d32f2f;
+}
+
+.important-item h3 {
+  margin: 0 0 10px 0;
+  color: #1a3a5c;
+  font-size: 1.1em;
+  font-weight: 600;
+}
+
+.important-item p {
+  margin: 0 0 10px 0;
+  color: #555;
+  line-height: 1.6;
+}
+
+.important-item ul {
+  margin: 10px 0 0 0;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.important-item li {
+  color: #555;
+  line-height: 1.6;
+}
+
+.next-phase {
+  background: linear-gradient(135deg, #e8f5e9 0%, #f1f8e9 100%);
+  border-radius: 8px;
+  padding: 30px;
+  border-left: 4px solid #4caf50;
+  text-align: center;
+}
+
+.next-phase p {
+  margin: 0 0 20px 0;
+  font-size: 1.05em;
+  color: #333;
+  line-height: 1.7;
+}
+
+.next-link {
+  display: inline-block;
+  padding: 12px 24px;
+  background: #4caf50;
+  color: white;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.next-link:hover {
+  background: #45a049;
+  text-decoration: none;
+  transform: translateX(5px);
+}
+
+.quick-ref {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.checklist {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  border: 2px solid #e0e8f0;
+}
+
+.checklist-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.checklist-item input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  accent-color: #2c5aa0;
+}
+
+.checklist-item label {
+  margin: 0;
+  cursor: pointer;
+  font-size: 0.95em;
+  color: #555;
+  user-select: none;
+}
+
+@media (max-width: 768px) {
+  .page-container {
+    padding: 25px 15px;
+  }
+
+  .page-header {
+    margin-bottom: 35px;
+    padding-bottom: 20px;
+  }
+
+  .page-header h1 {
+    font-size: 1.8em;
+  }
+
+  .phase-subtitle {
+    font-size: 1.05em;
+  }
+
+  .phase-meta {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  section h2 {
+    font-size: 1.4em;
+    margin-bottom: 15px;
+  }
+
+  .timeline-item {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .timeline-marker {
+    min-width: auto;
+  }
+
+  .cost-item,
+  .cost-total {
+    flex-direction: column;
+    gap: 5px;
+  }
+}.phase-page {
+  min-height: calc(100vh - 300px);
+}
+
+.page-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.page-header {
+  margin-bottom: 50px;
+  border-bottom: 3px solid #2c5aa0;
+  padding-bottom: 30px;
+}
+
+.page-header h1 {
+  margin: 0 0 10px 0;
+  font-size: 2.5em;
+  color: #1a3a5c;
+  font-weight: 700;
+}
+
+.phase-subtitle {
+  margin: 0 0 15px 0;
+  font-size: 1.2em;
+  color: #666;
+  font-weight: 500;
+}
+
+.phase-meta {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+
+.phase-dates,
+.phase-duration {
+  font-size: 0.95em;
+  color: #555;
+  padding: 5px 0;
+}
+
+.phase-dates::before {
+  content: "📅 ";
+  margin-right: 5px;
+}
+
+.phase-duration::before {
+  content: "⏱️ ";
+  margin-right: 5px;
+}
+
+.phase-content {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+section h2 {
+  font-size: 1.8em;
+  color: #1a3a5c;
+  margin: 0 0 20px 0;
+  font-weight: 600;
+  border-left: 4px solid #2c5aa0;
+  padding-left: 15px;
+}
+
+.intro-section {
+  background: linear-gradient(135deg, #e3f2fd 0%, #f3e5f5 100%);
+  padding: 25px;
+  border-radius: 8px;
+  border-left: 4px solid #2c5aa0;
+}
+
+.intro-section p {
+  margin: 0;
+  font-size: 1.05em;
+  line-height: 1.7;
+  color: #333;
+}
+
+.timeline-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.timeline-item {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  border-left: 4px solid #2c5aa0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.timeline-marker {
+  min-width: 100px;
+  font-weight: 600;
+  color: #2c5aa0;
+  font-size: 0.95em;
+}
+
+.timeline-content h3 {
+  margin: 0 0 8px 0;
+  font-size: 1.15em;
+  color: #1a3a5c;
+}
+
+.timeline-content p {
+  margin: 0;
+  color: #555;
+  line-height: 1.6;
+}
+
+.action-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.action-card {
+  background: white;
+  border-radius: 8px;
+  padding: 25px;
+  border-left: 4px solid #2c5aa0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.action-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  transform: translateY(-2px);
+}
+
+.action-card h3 {
+  margin: 0 0 15px 0;
+  font-size: 1.2em;
+  color: #1a3a5c;
+  font-weight: 600;
+}
+
+.action-details {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.action-details p {
+  margin: 0;
+  color: #555;
+  line-height: 1.6;
+}
+
+.action-details ul {
+  margin: 10px 0 0 0;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.action-details li {
+  color: #555;
+  line-height: 1.6;
+}
+
+.cost-breakdown {
+  background: linear-gradient(135deg, #fff9e6 0%, #fff3e0 100%);
+  border-radius: 8px;
+  padding: 30px;
+  border-left: 4px solid #ff9800;
+}
+
+.cost-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.cost-label {
+  color: #555;
+  font-weight: 500;
+}
+
+.cost-value {
+  color: #1a3a5c;
+  font-weight: 600;
+}
+
+.cost-total {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0 0 0;
+  margin-top: 10px;
+  border-top: 2px solid rgba(0, 0, 0, 0.1);
+  font-size: 1.1em;
+}
+
+.cost-note {
+  margin: 15px 0 0 0;
+  font-size: 0.95em;
+  color: #666;
+  font-style: italic;
+  padding-top: 15px;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.important-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.important-item {
+  background: linear-gradient(135deg, #ffebee 0%, #fce4ec 100%);
+  border-radius: 8px;
+  padding: 20px;
+  border-left: 4px solid #d32f2f;
+}
+
+.important-item h3 {
+  margin: 0 0 10px 0;
+  color: #1a3a5c;
+  font-size: 1.1em;
+  font-weight: 600;
+}
+
+.important-item p {
+  margin: 0 0 10px 0;
+  color: #555;
+  line-height: 1.6;
+}
+
+.important-item ul {
+  margin: 10px 0 0 0;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.important-item li {
+  color: #555;
+  line-height: 1.6;
+}
+
+.next-phase {
+  background: linear-gradient(135deg, #e8f5e9 0%, #f1f8e9 100%);
+  border-radius: 8px;
+  padding: 30px;
+  border-left: 4px solid #4caf50;
+  text-align: center;
+}
+
+.next-phase p {
+  margin: 0 0 20px 0;
+  font-size: 1.05em;
+  color: #333;
+  line-height: 1.7;
+}
+
+.next-link {
+  display: inline-block;
+  padding: 12px 24px;
+  background: #4caf50;
+  color: white;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.next-link:hover {
+  background: #45a049;
+  text-decoration: none;
+  transform: translateX(5px);
+}
+
+.quick-ref {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.checklist {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  border: 2px solid #e0e8f0;
+}
+
+.checklist-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.checklist-item input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  accent-color: #2c5aa0;
+}
+
+.checklist-item label {
+  margin: 0;
+  cursor: pointer;
+  font-size: 0.95em;
+  color: #555;
+  user-select: none;
+}
+
+@media (max-width: 768px) {
+  .page-container {
+    padding: 25px 15px;
+  }
+
+  .page-header {
+    margin-bottom: 35px;
+    padding-bottom: 20px;
+  }
+
+  .page-header h1 {
+    font-size: 1.8em;
+  }
+
+  .phase-subtitle {
+    font-size: 1.05em;
+  }
+
+  .phase-meta {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  section h2 {
+    font-size: 1.4em;
+    margin-bottom: 15px;
+  }
+
+  .timeline-item {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .timeline-marker {
+    min-width: auto;
+  }
+
+  .cost-item,
+  .cost-total {
+    flex-direction: column;
+    gap: 5px;
+  }
+}</style></head><body><header class="site-header">
+  <div class="header-container">
+    <h1 class="site-title">Carolyn's Thailand Journey</h1>
+    <p class="site-tagline">Long-Term Visa Planning & Settlement Guide</p>
+  </div>
+</header><nav class="site-nav">
+  <div class="nav-container">
+    <a href="/carolyn-2/" class="nav-link">Home</a>
+    <a href="/carolyn-2/phase-1-pre-departure" class="nav-link">Phase 1: Pre-Departure</a>
+    <a href="/carolyn-2/phase-2-arrival-settling" class="nav-link active">Phase 2: Arrival & Settling</a>
+    <a href="/carolyn-2/phase-3-medical-plan" class="nav-link">Phase 3: Medical Plan</a>
+    <a href="/carolyn-2/phase-4-dtv-application" class="nav-link">Phase 4: DTV Application</a>
+    <a href="/carolyn-2/phase-5-long-term-settlement" class="nav-link">Phase 5: Long-Term</a>
+    <a href="/carolyn-2/timeline" class="nav-link">Timeline</a>
+    <a href="/carolyn-2/resources-tools" class="nav-link">Resources</a>
+  </div>
+</nav><main class="phase-page">
+  <div class="page-container">
+    <div class="page-header">
+      <h1>Phase 3: Getting a Medical Plan</h1>
+      <p class="phase-subtitle">Required Foundation for DTV Visa Approval</p>
+      <div class="phase-meta">
+        <span class="phase-dates">Sept 16 - Oct 14, 2025</span>
+        <span class="phase-duration">~4 weeks</span>
+      </div>
+    </div>
+
+    <div class="phase-content">
+      <section class="intro-section">
+        <p>This phase is critical: you must establish a formal medical treatment plan with a Thai healthcare provider. This becomes the foundation for your DTV visa application and proves you have legitimate medical reasons for staying in Thailand long-term.</p>
+      </section>
+
+      <section class="timeline-section">
+        <h2>Phase Timeline</h2>
+        <div class="timeline-item">
+          <div class="timeline-marker">Sept 16</div>
+          <div class="timeline-content">
+            <h3>Start Medical Plan Process</h3>
+            <p>Begin coordinating with Thai healthcare providers to establish your treatment plan.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-marker">Sept 16 - Oct 14</div>
+          <div class="timeline-content">
+            <h3>Consultation & Documentation</h3>
+            <p>Complete consultations, gather medical records, and work with providers on official medical letters.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-marker">Oct 14</div>
+          <div class="timeline-content">
+            <h3>Documentation Complete</h3>
+            <p>Have all medical plans and letters ready for DTV application package.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="action-section">
+        <h2>Key Actions</h2>
+        <div class="action-card">
+          <h3>1. Contact Bangkok Hospital Chiang Mai</h3>
+          <div class="action-details">
+            <p><strong>Why:</strong> Bangkok Hospital has a proven track record of providing strong medical letters for DTV visa approvals.</p>
+            <ul>
+              <li>English-speaking staff with international hospital standards</li>
+              <li>Familiar with DTV visa requirements</li>
+              <li>Can coordinate with your physical therapist</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="action-card">
+          <h3>2. Schedule Medical Consultation</h3>
+          <div class="action-details">
+            <p><strong>Expected Cost:</strong> $40-90 for initial consultation</p>
+            <p><strong>Bring to Appointment:</strong></p>
+            <ul>
+              <li>US medical records (surgeries, MRI scans, X-rays)</li>
+              <li>Current pain management and treatment needs</li>
+              <li>Physical therapy requirements</li>
+              <li>Any specialist recommendations from US doctors</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="action-card">
+          <h3>3. Review Medical Plan with Thai Doctor</h3>
+          <div class="action-details">
+            <p><strong>Objectives:</strong></p>
+            <ul>
+              <li>Doctor reviews your US medical records</li>
+              <li>Establishes ongoing treatment plan in Thailand</li>
+              <li>Documents that 6+ months of treatment is medically necessary</li>
+              <li>Provides cost comparison (PT in US vs Thailand)</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="action-card">
+          <h3>4. Secure Medical Letters & Plan</h3>
+          <div class="action-details">
+            <p><strong>Required Documents:</strong></p>
+            <ul>
+              <li>Official medical plan for 6+ months of treatment</li>
+              <li>Doctor's letter confirming medical necessity</li>
+              <li>Treatment schedule and estimated costs</li>
+              <li>Hospital letterhead with contact information</li>
+            </ul>
+            <p><strong>Critical:</strong> These documents must be error-free. Typos or inconsistencies cause automatic visa rejection.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="cost-breakdown">
+        <h2>Cost Breakdown for This Phase</h2>
+        <div class="cost-item">
+          <span class="cost-label">Bangkok Hospital Consultation</span>
+          <span class="cost-value">$40-90</span>
+        </div>
+        <div class="cost-item">
+          <span class="cost-label">Physical Therapy Sessions (estimate for 6 months)</span>
+          <span class="cost-value">$150-450</span>
+        </div>
+        <div class="cost-item">
+          <span class="cost-label">Medical Records Translation (if needed)</span>
+          <span class="cost-value">$50-150</span>
+        </div>
+        <div class="cost-total">
+          <span class="cost-label"><strong>Phase 3 Total Estimate</strong></span>
+          <span class="cost-value"><strong>$240-690</strong></span>
+        </div>
+        <p class="cost-note">Note: Physical therapy in Thailand ($25-75/session) is significantly cheaper than US rates ($100+/session), which strengthens your DTV justification.</p>
+      </section>
+
+      <section class="important-section">
+        <h2>⚠️ Important Considerations</h2>
+        <div class="important-item">
+          <h3>Medical Record Documentation</h3>
+          <p>This consultation creates the foundation for your visa approval. The Thai doctor will review your US medical records to establish that ongoing treatment is medically justified and cannot be deferred.</p>
+        </div>
+        <div class="important-item">
+          <h3>Treatment Duration</h3>
+          <p>You must demonstrate need for 6+ months of medical treatment. This is a key requirement for DTV approval. Your medical plan should outline:</p>
+          <ul>
+            <li>Initial assessment phase</li>
+            <li>Active treatment period</li>
+            <li>Follow-up and monitoring</li>
+          </ul>
+        </div>
+        <div class="important-item">
+          <h3>Cost Justification</h3>
+          <p>Physical therapy costs significantly less in Thailand than the US. This cost difference should be documented and included in your DTV application—it strengthens your case that Thailand is a medically sound and financially responsible choice.</p>
+        </div>
+        <div class="important-item">
+          <h3>Document Quality</h3>
+          <p>All medical documents must be pristine. Spelling errors, unclear scans, or missing signatures result in automatic rejection. Get copies verified before submitting anything to immigration.</p>
+        </div>
+      </section>
+
+      <section class="next-phase">
+        <h2>What's Next?</h2>
+        <p>Once you have your medical plan and letters, you'll move into <strong>Phase 4: DTV Application Preparation</strong>, where you'll compile the complete document package needed for visa submission in Vietnam.</p>
+        <a href="/carolyn-2/phase-4-dtv-application" class="next-link">→ Go to Phase 4: DTV Application</a>
+      </section>
+
+      <section class="quick-ref">
+        <h2>Quick Reference: Medical Plan Checklist</h2>
+        <div class="checklist">
+          <div class="checklist-item">
+            <input type="checkbox" id="check1" disabled>
+            <label for="check1">Contact Bangkok Hospital Chiang Mai</label>
+          </div>
+          <div class="checklist-item">
+            <input type="checkbox" id="check2" disabled>
+            <label for="check2">Schedule initial consultation ($40-90)</label>
+          </div>
+          <div class="checklist-item">
+            <input type="checkbox" id="check3" disabled>
+            <label for="check3">Prepare and bring US medical records</label>
+          </div>
+          <div class="checklist-item">
+            <input type="checkbox" id="check4" disabled>
+            <label for="check4">Review medical plan with Thai doctor</label>
+          </div>
+          <div class="checklist-item">
+            <input type="checkbox" id="check5" disabled>
+            <label for="check5">Obtain official medical letters and treatment plan</label>
+          </div>
+          <div class="checklist-item">
+            <input type="checkbox" id="check6" disabled>
+            <label for="check6">Verify all documents for accuracy and completeness</label>
+          </div>
+          <div class="checklist-item">
+            <input type="checkbox" id="check7" disabled>
+            <label for="check7">File documents safely for DTV application</label>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</main><footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-section">
+      <h4>About This Guide</h4>
+      <p>A comprehensive resource for planning a long-term stay in Thailand using the Digital Nomad Visa (DTV) with medical treatment justification.</p>
+    </div>
+    <div class="footer-section">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="/carolyn-2/timeline">Full Timeline</a></li>
+        <li><a href="/carolyn-2/faq">FAQ</a></li>
+        <li><a href="/carolyn-2/budget-planning">Budget Planning</a></li>
+        <li><a href="/carolyn-2/resources-tools">Resources & Tools</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Important Notes</h4>
+      <p>This guide reflects current visa requirements and costs as of 2025. Always verify information with official embassy websites before making decisions.</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 Thailand Visa Planning Guide. Information is for educational purposes only.</p>
+  </div>
+</footer></body></html>
